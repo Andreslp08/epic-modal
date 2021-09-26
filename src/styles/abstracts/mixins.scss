@@ -1,0 +1,133 @@
+@mixin basic-epic-modal($background-color) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: 9999999999;
+    justify-content: center;
+    align-items: center;
+    &::before{
+        content: '';
+        position: absolute;
+        background-color: $background-color;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+    }
+    // visibility: hidden;
+    // opacity: 0;
+    &.epic-modal-position-top-left {
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    &.epic-modal-position-top-center {
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &.epic-modal-position-top-right {
+        justify-content: right;
+        align-items: flex-start;
+    }
+
+    &.epic-modal-position-center-left {
+        justify-content: left;
+        align-items: center;
+    }
+
+    &.epic-modal-position-center-center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.epic-modal-position-center-right {
+        justify-content: right;
+        align-items: center;
+    }
+
+    &.epic-modal-position-bottom-left {
+        justify-content: left;
+        align-items: flex-end;
+    }
+
+    &.epic-modal-position-bottom-center {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    &.epic-modal-position-bottom-right {
+        justify-content: right;
+        align-items: flex-end;
+    }
+
+    &.show{
+        visibility: visible;
+        opacity: 1;
+        transition: visibility .3s, opacity .3s;
+    }
+    &.hide{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility .3s, opacity .3s;
+    }
+    &.epic-modal-backdrop-click{
+        cursor: pointer;
+        *{
+            cursor: auto;
+        }
+    }
+    *[data-epic-modal-close-button="true"]{
+        cursor: pointer;
+    }
+}
+@mixin basic-epic-modal-window($background-color, $max-width, $max-height) {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: $max-width;
+    max-height: $max-height;
+    background-color: $background-color;
+    margin: 15px;
+}
+
+@mixin epic-modal-scroll-style($background-color, $onbackground-color, $primary-color, $onprimary-color) {
+    &::-webkit-scrollbar {
+        width: 0.4rem;
+        height: 0.4rem;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: $background-color;
+      }
+    
+    
+      &::-webkit-scrollbar-thumb {
+        background: $onbackground-color;
+        border-radius: 999px;
+        &:hover{
+            background: $primary-color;
+            cursor: pointer;
+        }
+      }    
+}
+
+// ANIMATION
+@mixin anim($list) {
+    $combined: "";
+    @for $i from 1 through length($list) {
+      $anim: nth($list, $i);
+  
+      @if $i == length($list) {
+        $combined: $combined + $anim;
+      } @else {
+        $combined: $combined + $anim + ",";
+      }
+    }
+  
+    animation: unquote($combined);
+  }
+  

@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+body {
+  background-color: rebeccapurple; }
+
+.epic-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 9999999999;
+  justify-content: center;
+  align-items: center; }
+  .epic-modal::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; }
+  .epic-modal.epic-modal-position-top-left {
+    justify-content: left;
+    align-items: flex-start; }
+  .epic-modal.epic-modal-position-top-center {
+    justify-content: center;
+    align-items: flex-start; }
+  .epic-modal.epic-modal-position-top-right {
+    justify-content: right;
+    align-items: flex-start; }
+  .epic-modal.epic-modal-position-center-left {
+    justify-content: left;
+    align-items: center; }
+  .epic-modal.epic-modal-position-center-center {
+    justify-content: center;
+    align-items: center; }
+  .epic-modal.epic-modal-position-center-right {
+    justify-content: right;
+    align-items: center; }
+  .epic-modal.epic-modal-position-bottom-left {
+    justify-content: left;
+    align-items: flex-end; }
+  .epic-modal.epic-modal-position-bottom-center {
+    justify-content: center;
+    align-items: flex-end; }
+  .epic-modal.epic-modal-position-bottom-right {
+    justify-content: right;
+    align-items: flex-end; }
+  .epic-modal.show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .3s, opacity .3s; }
+  .epic-modal.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity .3s; }
+  .epic-modal.epic-modal-backdrop-click {
+    cursor: pointer; }
+    .epic-modal.epic-modal-backdrop-click * {
+      cursor: auto; }
+  .epic-modal *[data-epic-modal-close-button="true"] {
+    cursor: pointer; }
+
+@keyframes scaleInBounce {
+  0% {
+    transform: scale(0); }
+  50% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes scaleOutBounce {
+  0% {
+    transform: scale(1.1); }
+  50% {
+    transform: scale(0.7); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes opacityAnim {
+  0% {
+    opacity: 0; } }
+
+@keyframes visibilityAnim {
+  0% {
+    visibility: hidden; } }
+
+.epic-modal-anim-default-show {
+  animation: visibilityAnim .3s linear .2s 1 normal both; }
+  .epic-modal-anim-default-show::before {
+    animation: opacityAnim 0.3s linear 0.2s 1 normal both; }
+  .epic-modal-anim-default-show > :nth-child(1) {
+    animation: scaleInBounce .3s linear .2s 1 normal both; }
+
+.epic-modal-anim-default-hide {
+  animation: visibilityAnim .3s linear .2s 1 reverse both; }
+  .epic-modal-anim-default-hide::before {
+    animation: opacityAnim 0.3s linear 0.2s 1 reverse both; }
+  .epic-modal-anim-default-hide > :nth-child(1) {
+    animation: scaleInBounce .3s linear .2s 1 reverse both; }
+
+.epic-modal.epic-modal-theme-default-light {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 9999999999;
+  justify-content: center;
+  align-items: center; }
+  .epic-modal.epic-modal-theme-default-light::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; }
+  .epic-modal.epic-modal-theme-default-light.epic-modal-position-top-left {
+    justify-content: left;
+    align-items: flex-start; }
+  .epic-modal.epic-modal-theme-default-light.epic-modal-position-top-center {
+    justify-content: center;
+    align-items: flex-start; }
+  .epic-modal.epic-modal-theme-default-light.epic-modal-position-top-right {
+    justify-content: right;
+    align-items: flex-start; }
+  .epic-modal.epic-modal-theme-default-light.epic-modal-position-center-left {
+    justify-content: left;
+    align-items: center; }
+  .epic-modal.epic-modal-theme-default-light.epic-modal-position-center-center {
+    justify-content: center;
+    align-items: center; }
+  .epic-modal.epic-modal-theme-default-light.epic-modal-position-center-right {
+    justify-content: right;
+    align-items: center; }
+  .epic-modal.epic-modal-theme-default-light.epic-modal-position-bottom-left {
+    justify-content: left;
+    align-items: flex-end; }
+  .epic-modal.epic-modal-theme-default-light.epic-modal-position-bottom-center {
+    justify-content: center;
+    align-items: flex-end; }
+  .epic-modal.epic-modal-theme-default-light.epic-modal-position-bottom-right {
+    justify-content: right;
+    align-items: flex-end; }
+  .epic-modal.epic-modal-theme-default-light.show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .3s, opacity .3s; }
+  .epic-modal.epic-modal-theme-default-light.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity .3s; }
+  .epic-modal.epic-modal-theme-default-light.epic-modal-backdrop-click {
+    cursor: pointer; }
+    .epic-modal.epic-modal-theme-default-light.epic-modal-backdrop-click * {
+      cursor: auto; }
+  .epic-modal.epic-modal-theme-default-light *[data-epic-modal-close-button="true"] {
+    cursor: pointer; }
+  .epic-modal.epic-modal-theme-default-light > .window {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 90vw;
+    max-height: 80vh;
+    background-color: #fff;
+    margin: 15px; }
+    .epic-modal.epic-modal-theme-default-light > .window > .title {
+      color: #000; }
+    .epic-modal.epic-modal-theme-default-light > .window > .close-button {
+      background-color: #0073ff;
+      color: #fff; }
+    .epic-modal.epic-modal-theme-default-light > .window > .content {
+      border-top: solid #0073ff;
+      color: #000; }
+      .epic-modal.epic-modal-theme-default-light > .window > .content::-webkit-scrollbar {
+        width: 0.4rem;
+        height: 0.4rem; }
+      .epic-modal.epic-modal-theme-default-light > .window > .content::-webkit-scrollbar-track {
+        background: #fff; }
+      .epic-modal.epic-modal-theme-default-light > .window > .content::-webkit-scrollbar-thumb {
+        background: #000;
+        border-radius: 999px; }
+        .epic-modal.epic-modal-theme-default-light > .window > .content::-webkit-scrollbar-thumb:hover {
+          background: #0073ff;
+          cursor: pointer; }
+
+.epic-modal.epic-modal-theme-default-dark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 9999999999;
+  justify-content: center;
+  align-items: center; }
+  .epic-modal.epic-modal-theme-default-dark::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; }
+  .epic-modal.epic-modal-theme-default-dark.epic-modal-position-top-left {
+    justify-content: left;
+    align-items: flex-start; }
+  .epic-modal.epic-modal-theme-default-dark.epic-modal-position-top-center {
+    justify-content: center;
+    align-items: flex-start; }
+  .epic-modal.epic-modal-theme-default-dark.epic-modal-position-top-right {
+    justify-content: right;
+    align-items: flex-start; }
+  .epic-modal.epic-modal-theme-default-dark.epic-modal-position-center-left {
+    justify-content: left;
+    align-items: center; }
+  .epic-modal.epic-modal-theme-default-dark.epic-modal-position-center-center {
+    justify-content: center;
+    align-items: center; }
+  .epic-modal.epic-modal-theme-default-dark.epic-modal-position-center-right {
+    justify-content: right;
+    align-items: center; }
+  .epic-modal.epic-modal-theme-default-dark.epic-modal-position-bottom-left {
+    justify-content: left;
+    align-items: flex-end; }
+  .epic-modal.epic-modal-theme-default-dark.epic-modal-position-bottom-center {
+    justify-content: center;
+    align-items: flex-end; }
+  .epic-modal.epic-modal-theme-default-dark.epic-modal-position-bottom-right {
+    justify-content: right;
+    align-items: flex-end; }
+  .epic-modal.epic-modal-theme-default-dark.show {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .3s, opacity .3s; }
+  .epic-modal.epic-modal-theme-default-dark.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s, opacity .3s; }
+  .epic-modal.epic-modal-theme-default-dark.epic-modal-backdrop-click {
+    cursor: pointer; }
+    .epic-modal.epic-modal-theme-default-dark.epic-modal-backdrop-click * {
+      cursor: auto; }
+  .epic-modal.epic-modal-theme-default-dark *[data-epic-modal-close-button="true"] {
+    cursor: pointer; }
+  .epic-modal.epic-modal-theme-default-dark > .window {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 90vw;
+    max-height: 80vh;
+    background-color: #222;
+    margin: 15px; }
+    .epic-modal.epic-modal-theme-default-dark > .window > .title {
+      color: #fff; }
+    .epic-modal.epic-modal-theme-default-dark > .window > .close-button {
+      background-color: #0073ff;
+      color: #fff; }
+    .epic-modal.epic-modal-theme-default-dark > .window > .content {
+      border-top: solid #0073ff;
+      color: #fff; }
+      .epic-modal.epic-modal-theme-default-dark > .window > .content::-webkit-scrollbar {
+        width: 0.4rem;
+        height: 0.4rem; }
+      .epic-modal.epic-modal-theme-default-dark > .window > .content::-webkit-scrollbar-track {
+        background: #222; }
+      .epic-modal.epic-modal-theme-default-dark > .window > .content::-webkit-scrollbar-thumb {
+        background: #fff;
+        border-radius: 999px; }
+        .epic-modal.epic-modal-theme-default-dark > .window > .content::-webkit-scrollbar-thumb:hover {
+          background: #0073ff;
+          cursor: pointer; }
+
+.epic-modal.epic-modal-theme-default-dark > .window, .epic-modal.epic-modal-theme-default-light > .window {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: min-content 1fr;
+  border-radius: 30px; }
+  .epic-modal.epic-modal-theme-default-dark > .window > .title, .epic-modal.epic-modal-theme-default-light > .window > .title {
+    font-family: "Anton", Impact, sans-serif;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    overflow: hidden; }
+  .epic-modal.epic-modal-theme-default-dark > .window > .close-button, .epic-modal.epic-modal-theme-default-light > .window > .close-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: -30%;
+    left: calc(10%);
+    font-size: 26.66667px;
+    font-family: sans-serif;
+    border-radius: 999px;
+    border: none;
+    outline: none;
+    transition: transform 0.3s, color 0.3s, background-color 0.3s; }
+    .epic-modal.epic-modal-theme-default-dark > .window > .close-button:hover, .epic-modal.epic-modal-theme-default-light > .window > .close-button:hover {
+      transform: scale(1.2); }
+  .epic-modal.epic-modal-theme-default-dark > .window > .content, .epic-modal.epic-modal-theme-default-light > .window > .content {
+    grid-column: span 2;
+    margin-top: .25rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: .25rem;
+    overflow: auto;
+    border-top-width: 2px; }

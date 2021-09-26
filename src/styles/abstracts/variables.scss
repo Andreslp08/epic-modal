@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+//default 
+$default-title:'Anton', Impact, sans-serif;
+//default - LIGHT
+$default-light-backdrop-color:rgba(0,0,0,.5);
+$default-light-background-color:#fff;
+$default-light-onbackground-color:#000;
+$default-light-primary-color:rgba(0, 115, 255, 1);
+$default-light-onprimary-color:#fff;
+//default - DARK
+$default-dark-backdrop-color:rgba(0, 0, 0,.5);
+$default-dark-background-color:#222;
+$default-dark-onbackground-color:#fff;
+$default-dark-primary-color:rgba(0, 115, 255, 1);
+$default-dark-onprimary-color:#fff;

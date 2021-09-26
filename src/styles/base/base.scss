@@ -1,0 +1,17 @@
+// :root {
+//     --epic-modal-backdrop-color:rgba(0,0,0,.5);
+//     --epic-modal-background-color: rgb(22, 22, 22);
+//     --epic-modal-onbackground-color: #fff;
+//     --epic-modal-primary-color: rgb(0, 93, 254);
+//     --epic-modal-onprimary-color: #fff;
+//     --epic-modal-font-anton:'Anton', sans-serif;
+//     --epic-modal-title-font:var(--epic-modal-font-anton);
+// }
+
+body{
+    background-color: rebeccapurple;
+}
+
+.epic-modal{
+    @include basic-epic-modal($default-light-backdrop-color);
+}
