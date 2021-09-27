@@ -8,10 +8,10 @@
 //     --epic-modal-title-font:var(--epic-modal-font-anton);
 // }
 
-body{
-    background-color: rebeccapurple;
-}
 
 .epic-modal{
     @include basic-epic-modal($default-light-backdrop-color);
 }
+
+
+
