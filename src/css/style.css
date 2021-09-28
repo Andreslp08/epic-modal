@@ -85,6 +85,7 @@
     animation: scaleInBounce .3s linear .2s 1 normal both; }
 
 .epic-modal-anim-default-hide {
+  display: flex !important;
   animation: visibilityAnim .3s linear .2s 1 reverse both; }
   .epic-modal-anim-default-hide::before {
     animation: opacityAnim 0.3s linear 0.2s 1 reverse both; }
