@@ -20,10 +20,12 @@ const THEMES = {
     "custom":"custom"
 }
 
+const DEFAULT_Z_INDEZ = 999999999;
 
 export {
     DATASET_KEYS,
     HTML_DATA_KEYS,
     THEMES,
-    ANIMATIONS
+    ANIMATIONS,
+    DEFAULT_Z_INDEZ 
 }
