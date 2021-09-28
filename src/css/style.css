@@ -5,8 +5,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  z-index: 9999999999;
+  display: none;
+  z-index: 999999999;
   justify-content: center;
   align-items: center; }
   .epic-modal::before {
@@ -45,14 +45,6 @@
   .epic-modal.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.show {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility .3s, opacity .3s; }
-  .epic-modal.hide {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility .3s, opacity .3s; }
   .epic-modal.epic-modal-backdrop-click {
     cursor: pointer; }
     .epic-modal.epic-modal-backdrop-click * {
@@ -85,6 +77,7 @@
     visibility: hidden; } }
 
 .epic-modal-anim-default-show {
+  display: flex !important;
   animation: visibilityAnim .3s linear .2s 1 normal both; }
   .epic-modal-anim-default-show::before {
     animation: opacityAnim 0.3s linear 0.2s 1 normal both; }
@@ -104,8 +97,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  z-index: 9999999999;
+  display: none;
+  z-index: 999999999;
   justify-content: center;
   align-items: center; }
   .epic-modal.epic-modal-theme-default-light::before {
@@ -144,14 +137,6 @@
   .epic-modal.epic-modal-theme-default-light.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-default-light.show {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility .3s, opacity .3s; }
-  .epic-modal.epic-modal-theme-default-light.hide {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility .3s, opacity .3s; }
   .epic-modal.epic-modal-theme-default-light.epic-modal-backdrop-click {
     cursor: pointer; }
     .epic-modal.epic-modal-theme-default-light.epic-modal-backdrop-click * {
@@ -191,8 +176,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  z-index: 9999999999;
+  display: none;
+  z-index: 999999999;
   justify-content: center;
   align-items: center; }
   .epic-modal.epic-modal-theme-default-dark::before {
@@ -231,14 +216,6 @@
   .epic-modal.epic-modal-theme-default-dark.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-default-dark.show {
-    visibility: visible;
-    opacity: 1;
-    transition: visibility .3s, opacity .3s; }
-  .epic-modal.epic-modal-theme-default-dark.hide {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility .3s, opacity .3s; }
   .epic-modal.epic-modal-theme-default-dark.epic-modal-backdrop-click {
     cursor: pointer; }
     .epic-modal.epic-modal-theme-default-dark.epic-modal-backdrop-click * {
