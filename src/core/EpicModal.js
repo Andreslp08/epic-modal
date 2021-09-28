@@ -35,7 +35,7 @@ export default class EpicModal {
         if(this.element){
             this.element.remove();
         }
-        this.element = document.body.querySelector(`[${HTML_DATA_KEYS.id} = ${this.id}]`)
+        this.element = document.body.querySelector(`[${HTML_DATA_KEYS.id} = "${this.id}"]`)
         this.updateConfig(this.config)
         this.element.removeEventListener("click", this.closeButtonHandler, false);
         this.element.addEventListener('click', this.closeButtonHandler);
@@ -43,7 +43,7 @@ export default class EpicModal {
 
     updateConfig(config = defaultConfig) {
         const previousConfig = this.config;
-        this.config = { ...defaultConfig, ...config };
+        this.config = { ...defaultConfig, ...this.config, ...config };
         this.element.dataset[DATASET_KEYS.config] = JSON.stringify(this.config);
         ElementProperties.setTheme(this.element, this.config.theme)
         ElementProperties.setPosition(this.element, this.config.position)

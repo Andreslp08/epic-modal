@@ -27,7 +27,7 @@ const defaultTemplate = (id = "", config = defaultConfig) => {
     if (!id || id.length <= 0) { return undefined };
     return `
     <div class="epic-modal" 
-        data-epic-modal-id=${id}
+        data-epic-modal-id="${id}"
         data-epic-modal-config ='${JSON.stringify(config)}'>
         <div class="window">
             <p class="title">${config.title}</p>
@@ -44,7 +44,7 @@ const customTemplate = (id = "", config = defaultConfig) => {
     if (!id || id.length <= 0) { return undefined };
     return `
     <div class="epic-modal" 
-    data-epic-modal-id=${id}
+    data-epic-modal-id="${id}"
     data-epic-modal-config = '${JSON.stringify(config)}'>
         ${config.customTemplate}
     </div>
