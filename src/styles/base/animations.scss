@@ -50,6 +50,7 @@
 }
 
 .epic-modal-anim-default-hide{
+  display: $epic-modal-display!important;
   animation: visibilityAnim .3s linear .2s 1 reverse both;
   &::before{
     $animations:(
