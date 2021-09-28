@@ -36,6 +36,7 @@
 }
 
 .epic-modal-anim-default-show{
+  display: $epic-modal-display!important;
   animation: visibilityAnim .3s linear .2s 1 normal both;
   &::before{
     $animations:(
