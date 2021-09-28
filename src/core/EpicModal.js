@@ -72,6 +72,7 @@ export default class EpicModal {
 
     show() {
         ElementProperties.setOpenAnimation(this.element, this.config.openAnimation);
+        EpicModalManager.bringToFront(this);
     }
     hide() {
         ElementProperties.setCloseAnimation(this.element, this.config.closeAnimation);
