@@ -4,8 +4,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    z-index: 9999999999;
+    display: none;
+    z-index: $epic-modal-zindex;
     justify-content: center;
     align-items: center;
     &::before{
@@ -18,8 +18,7 @@
         height: 100vh;
         z-index: -1;
     }
-    // visibility: hidden;
-    // opacity: 0;
+
     &.epic-modal-position-top-left {
         justify-content: left;
         align-items: flex-start;
@@ -65,16 +64,6 @@
         align-items: flex-end;
     }
 
-    &.show{
-        visibility: visible;
-        opacity: 1;
-        transition: visibility .3s, opacity .3s;
-    }
-    &.hide{
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility .3s, opacity .3s;
-    }
     &.epic-modal-backdrop-click{
         cursor: pointer;
         *{
