@@ -168,7 +168,8 @@
       top: -25%;
       right: -25%;
       background: black;
-      border: solid 2px #000;
+      border: none;
+      outline: none;
       color: #fff;
       border-radius: 99999px;
       width: 40px;
@@ -187,6 +188,8 @@
     .epic-modal.epic-modal-theme-default-light > .window > .content {
       border-top: solid black;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -283,7 +286,8 @@
       top: -25%;
       right: -25%;
       background: #ffbb00;
-      border: solid 2px #000;
+      border: none;
+      outline: none;
       color: #fff;
       border-radius: 99999px;
       width: 40px;
@@ -302,6 +306,8 @@
     .epic-modal.epic-modal-theme-default-light-gold > .window > .content {
       border-top: solid #ffbb00;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -398,7 +404,8 @@
       top: -25%;
       right: -25%;
       background: #ff5e00;
-      border: solid 2px #000;
+      border: none;
+      outline: none;
       color: #fff;
       border-radius: 99999px;
       width: 40px;
@@ -417,6 +424,8 @@
     .epic-modal.epic-modal-theme-default-light-salmon > .window > .content {
       border-top: solid #ff5e00;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -513,7 +522,8 @@
       top: -25%;
       right: -25%;
       background: #0073ff;
-      border: solid 2px #000;
+      border: none;
+      outline: none;
       color: #fff;
       border-radius: 99999px;
       width: 40px;
@@ -532,6 +542,8 @@
     .epic-modal.epic-modal-theme-default-light-blue > .window > .content {
       border-top: solid #0073ff;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -628,7 +640,8 @@
       top: -25%;
       right: -25%;
       background: #018763;
-      border: solid 2px #000;
+      border: none;
+      outline: none;
       color: #fff;
       border-radius: 99999px;
       width: 40px;
@@ -647,6 +660,8 @@
     .epic-modal.epic-modal-theme-default-light-aqua > .window > .content {
       border-top: solid #018763;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -743,7 +758,8 @@
       top: -25%;
       right: -25%;
       background: white;
-      border: solid 2px #fff;
+      border: none;
+      outline: none;
       color: black;
       border-radius: 99999px;
       width: 40px;
@@ -762,6 +778,8 @@
     .epic-modal.epic-modal-theme-default-dark > .window > .content {
       border-top: solid white;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -858,7 +876,8 @@
       top: -25%;
       right: -25%;
       background: #ffbb00;
-      border: solid 2px #fff;
+      border: none;
+      outline: none;
       color: #fff;
       border-radius: 99999px;
       width: 40px;
@@ -877,6 +896,8 @@
     .epic-modal.epic-modal-theme-default-dark-gold > .window > .content {
       border-top: solid #ffbb00;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -973,7 +994,8 @@
       top: -25%;
       right: -25%;
       background: #ff5e00;
-      border: solid 2px #fff;
+      border: none;
+      outline: none;
       color: #fff;
       border-radius: 99999px;
       width: 40px;
@@ -992,6 +1014,8 @@
     .epic-modal.epic-modal-theme-default-dark-salmon > .window > .content {
       border-top: solid #ff5e00;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -1088,7 +1112,8 @@
       top: -25%;
       right: -25%;
       background: #0073ff;
-      border: solid 2px #fff;
+      border: none;
+      outline: none;
       color: #fff;
       border-radius: 99999px;
       width: 40px;
@@ -1107,6 +1132,8 @@
     .epic-modal.epic-modal-theme-default-dark-blue > .window > .content {
       border-top: solid #0073ff;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -1203,7 +1230,8 @@
       top: -25%;
       right: -25%;
       background: #018763;
-      border: solid 2px #fff;
+      border: none;
+      outline: none;
       color: #fff;
       border-radius: 99999px;
       width: 40px;
@@ -1222,6 +1250,8 @@
     .epic-modal.epic-modal-theme-default-dark-aqua > .window > .content {
       border-top: solid #018763;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -1332,6 +1362,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -1442,6 +1474,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -1552,6 +1586,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -1662,6 +1698,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -1772,6 +1810,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -1882,6 +1922,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -1992,6 +2034,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -2102,6 +2146,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -2212,6 +2258,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -2322,6 +2370,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -2355,7 +2405,7 @@
   .epic-modal.epic-modal-theme-neon-light::before {
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: black;
     top: 0;
     left: 0;
     width: 100vw;
@@ -2463,6 +2513,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
+      scrollbar-color: #000 transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -2495,7 +2547,7 @@
   .epic-modal.epic-modal-theme-neon-dark::before {
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: black;
     top: 0;
     left: 0;
     width: 100vw;
@@ -2603,6 +2655,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -2635,7 +2689,7 @@
   .epic-modal.epic-modal-theme-neon-gold::before {
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: #1b1200;
     top: 0;
     left: 0;
     width: 100vw;
@@ -2743,6 +2797,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -2775,7 +2831,7 @@
   .epic-modal.epic-modal-theme-neon-salmon::before {
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: #200700;
     top: 0;
     left: 0;
     width: 100vw;
@@ -2883,6 +2939,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -2915,7 +2973,7 @@
   .epic-modal.epic-modal-theme-neon-blue::before {
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: #000b12;
     top: 0;
     left: 0;
     width: 100vw;
@@ -3023,6 +3081,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
@@ -3055,7 +3115,7 @@
   .epic-modal.epic-modal-theme-neon-aqua::before {
     content: "";
     position: absolute;
-    background-color: #000;
+    background-color: #00170e;
     top: 0;
     left: 0;
     width: 100vw;
@@ -3163,6 +3223,8 @@
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
+      scrollbar-color: #fff transparent;
+      scrollbar-width: thin;
       grid-column: span 2;
       margin-top: 0.25rem;
       margin-bottom: 1rem;
