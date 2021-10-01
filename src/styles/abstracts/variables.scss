@@ -6,7 +6,7 @@ $epic-modal-zindex:999999999;
 //DEFAULT
 $default-title:'Quicksand', sans-serif;
 //default - light
-$default-light-backdrop-color:rgba(0,0,0,.5);
+$default-light-backdrop-color:rgba(0,0,0,.8);
 $default-light-background-color:#fff;
 $default-light-onbackground-color:#000;
 $default-light-primary-color:rgb(0, 0, 0);
@@ -24,7 +24,7 @@ $default-light-blue-onprimary-color:#fff;
 $default-light-aqua-primary-color:rgb(1, 135, 99);
 $default-light-aqua-onprimary-color:#fff;
 //default - dark
-$default-dark-backdrop-color:rgba(0, 0, 0,.5);
+$default-dark-backdrop-color:rgba(0,0,0,.8);
 $default-dark-background-color:#222;
 $default-dark-onbackground-color:#fff;
 $default-dark-primary-color:rgb(255, 255, 255);
@@ -45,7 +45,7 @@ $default-dark-aqua-onprimary-color:#fff;
 // MINIMALIST
 $minimalist-title:'Quicksand', sans-serif;
 //minimalist - light
-$minimalist-light-backdrop-color:rgba(0,0,0,.5);
+$minimalist-light-backdrop-color:rgba(0,0,0,.8);
 $minimalist-light-background-color:#fff;
 $minimalist-light-onbackground-color:#000;
 $minimalist-light-primary-color:rgb(0, 0, 0);
@@ -63,7 +63,7 @@ $minimalist-light-blue-onprimary-color:#fff;
 $minimalist-light-aqua-primary-color:rgb(1, 135, 99);
 $minimalist-light-aqua-onprimary-color:#fff;
 //minimalist - dark
-$minimalist-dark-backdrop-color:rgba(0, 0, 0,.5);
+$minimalist-dark-backdrop-color:rgba(0,0,0,.8);
 $minimalist-dark-background-color:#222;
 $minimalist-dark-onbackground-color:#fff;
 $minimalist-dark-primary-color:rgb(255, 255, 255);
