@@ -1,13 +1,12 @@
-import { DEFAULT_Z_INDEZ } from "./Constants.js";
-import EpicModal from "./EpicModal.js";
-import EpicModalRef from "./EpicModalRef.js";
+import BaseEpicModal from "./BaseEpicModal.js";
+import { DEFAULT_Z_INDEZ, HTML_DATA_KEYS } from "./Constants.js";
 
 let modals = [];
 
 let zIndex = DEFAULT_Z_INDEZ;
 
 const addModal = (modal) => {
-    if (!modal && modal instanceof EpicModal == false ) { return };
+    if (!modal && modal instanceof BaseEpicModal == false ) { return };
     modals.push(modal);
 }
 
@@ -17,23 +16,32 @@ const removeModal = (id = "") => {
 }
 
 const bringToFront =(modal)=>{
-    if (!modal && modal instanceof EpicModal == false && !modal.element) { return };
+    if (!modal && modal instanceof BaseEpicModal == false && !modal.domElementReference) { return };
     modals.forEach(m=>{
-        if( m.element){
-            m.element.style.zIndex = `${zIndex-1}`;
+        if( m.domElementReference){
+            m.domElementReference.style.zIndex = `${zIndex-1}`;
         }
     })
-    modal.element.style.zIndex = `${zIndex}`;
+    modal.domElementReference.style.zIndex = `${zIndex}`;
 }
 
 const setZindex =(z_index = DEFAULT_Z_INDEZ)=>{
     zIndex = z_index;
     modals.forEach(m=>{
-        if( m.element){
-            m.element.style.zIndex = `${zIndex}`;
+        if( m.domElementReference){
+            m.domElementReference.style.zIndex = `${zIndex}`;
         }
     })
 
+}
+
+const isEpicModalInstance = (id = "") =>{
+    const exists = document.querySelector(`[${HTML_DATA_KEYS.id} = "${id}"]`).classList.contains("epic-modal");
+    if(exists){
+        return true
+    }else{
+        return false;
+    }
 }
 
 const all = () => {
@@ -56,5 +64,6 @@ export {
     removeModal,
     all,
     bringToFront,
-    setZindex
+    setZindex,
+    isEpicModalInstance 
 };
