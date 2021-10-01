@@ -15,8 +15,36 @@ const ANIMATIONS = {
 }
 
 const THEMES = {
+    //DEFAULT
     "default-light":"default-light",
+    "default-light-gold":"default-light-gold",
+    "default-light-salmon":"default-light-salmon",
+    "default-light-blue":"default-light-blue",
+    "default-light-aqua":"default-light-aqua",
     "default-dark":"default-dark",
+    "default-dark-gold":"default-dark-gold",
+    "default-dark-salmon":"default-dark-salmon",
+    "default-dark-blue":"default-dark-blue",
+    "default-dark-aqua":"default-dark-aqua",
+    //MINIMALISTIC
+    "minimalistic-light":"minimalistic-light",
+    "minimalistic-light-gold":"minimalistic-light-gold",
+    "minimalistic-light-salmon":"minimalistic-light-salmon",
+    "minimalistic-light-blue":"minimalistic-light-blue",
+    "minimalistic-light-aqua":"minimalistic-light-aqua",
+    "minimalistic-dark":"minimalistic-dark",
+    "minimalistic-dark-gold":"minimalistic-dark-gold",
+    "minimalistic-dark-salmon":"minimalistic-dark-salmon",
+    "minimalistic-dark-blue":"minimalistic-dark-blue",
+    "minimalistic-dark-aqua":"minimalistic-dark-aqua",
+    //NEON
+    "neon-light":"neon-light",
+    "neon-dark":"neon-dark",
+    "neon-gold":"neon-gold",
+    "neon-salmon":"neon-salmon",
+    "neon-blue":"neon-blue",
+    "neon-aqua":"neon-aqua",
+    //CUSTOM
     "custom":"custom"
 }
 
