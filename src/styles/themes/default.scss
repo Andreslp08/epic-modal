@@ -1,93 +1,106 @@
 .epic-modal {
-    &.epic-modal-theme-default-light {
-        @include basic-epic-modal($default-light-backdrop-color);
-        >.window {
-            @include basic-epic-modal-window($default-light-background-color, 90vw, 80vh);
-            >.title {
-                color: $default-light-onbackground-color;
-            }
-            >.close-button {
-                background-color: $default-light-primary-color;
-                color: $default-light-onprimary-color;
-            }
-            > .content {
-                border-top: solid $default-light-primary-color;
-                color: $default-light-onbackground-color;
-                @include epic-modal-scroll-style(
-                    $default-light-background-color,
-                    $default-light-onbackground-color,
-                    $default-light-primary-color,
-                    $default-light-onprimary-color
-                );
-            }
+    &.epic-modal-theme-default {
+        &-light{
+            @include default-epic-modal(
+                $default-light-backdrop-color,
+                $default-light-background-color,
+                $default-light-onbackground-color,
+                $default-light-primary-color,
+                $default-light-onprimary-color
+               )
         }
+        &-light-gold{
+            @include default-epic-modal(
+                $default-light-backdrop-color,
+                $default-light-background-color,
+                $default-light-onbackground-color,
+                $default-light-gold-primary-color,
+                $default-light-gold-onprimary-color 
+               )
+        }
+
+        &-light-salmon{
+            @include default-epic-modal(
+                $default-light-backdrop-color,
+                $default-light-background-color,
+                $default-light-onbackground-color,
+                $default-light-salmon-primary-color,
+                $default-light-salmon-onprimary-color 
+               )
+        }
+
+        &-light-blue{
+            @include default-epic-modal(
+                $default-light-backdrop-color,
+                $default-light-background-color,
+                $default-light-onbackground-color,
+                $default-light-blue-primary-color,
+                $default-light-blue-onprimary-color 
+               )
+        }
+
+        &-light-aqua{
+            @include default-epic-modal(
+                $default-light-backdrop-color,
+                $default-light-background-color,
+                $default-light-onbackground-color,
+                $default-light-aqua-primary-color,
+                $default-light-aqua-onprimary-color 
+               )
+        }
+
+        &-dark{
+            @include default-epic-modal(
+                $default-dark-backdrop-color,
+                $default-dark-background-color,
+                $default-dark-onbackground-color,
+                $default-dark-primary-color,
+                $default-dark-onprimary-color 
+               )
+        }
+
+        &-dark-gold{
+            @include default-epic-modal(
+                $default-dark-backdrop-color,
+                $default-dark-background-color,
+                $default-dark-onbackground-color,
+                $default-dark-gold-primary-color,
+                $default-dark-gold-onprimary-color 
+               )
+        }
+
+        &-dark-salmon{
+            @include default-epic-modal(
+                $default-dark-backdrop-color,
+                $default-dark-background-color,
+                $default-dark-onbackground-color,
+                $default-dark-salmon-primary-color,
+                $default-dark-salmon-onprimary-color 
+               )
+        }
+
+        &-dark-blue{
+            @include default-epic-modal(
+                $default-dark-backdrop-color,
+                $default-dark-background-color,
+                $default-dark-onbackground-color,
+                $default-dark-blue-primary-color,
+                $default-dark-blue-onprimary-color 
+               )
+        }
+
+        &-dark-aqua{
+            @include default-epic-modal(
+                $default-dark-backdrop-color,
+                $default-dark-background-color,
+                $default-dark-onbackground-color,
+                $default-dark-aqua-primary-color,
+                $default-dark-aqua-onprimary-color 
+               )
+        }
+
+
     }
 
-    &.epic-modal-theme-default-dark {
-        @include basic-epic-modal($default-dark-backdrop-color);
-        >.window {
-            @include basic-epic-modal-window($default-dark-background-color, 90vw, 80vh);
-            >.title {
-                color: $default-dark-onbackground-color;
-            }
-            >.close-button {
-                background-color: $default-dark-primary-color;
-                color: $default-dark-onprimary-color;
-            }
-            > .content {
-                border-top: solid $default-dark-primary-color;
-                color: $default-dark-onbackground-color;
-                @include epic-modal-scroll-style(
-                    $default-dark-background-color,
-                    $default-dark-onbackground-color,
-                    $default-dark-primary-color,
-                    $default-dark-onprimary-color
-                );
-            }
-        }
-    }
 
-    &.epic-modal-theme-default-dark,
-    &.epic-modal-theme-default-light {
-        > .window {
-            display: grid;
-            grid-template-columns: 1fr auto;
-            grid-template-rows: min-content 1fr;
-            border-radius: 30px;
-            > .title {
-                font-family: $default-title;
-                font-size: 1.2rem;
-                margin-left: 1rem;
-                margin-top: 1rem;
-                overflow: hidden;
-            }
-            > .close-button {
-                $button-size: 40px;
-                position: relative;
-                width: $button-size;
-                height: $button-size;
-                top: -30%;
-                left: calc(10%);
-                font-size: $button-size/1.5;
-                font-family: sans-serif;
-                border-radius: 999px;
-                border: none;
-                outline: none;
-                transition: transform 0.3s, color 0.3s, background-color 0.3s;
-                &:hover {
-                    transform: scale(1.2);
-                }
-            }
-            > .content {
-                grid-column: span 2;
-                margin-top: .25rem;
-                margin-bottom: 1rem;
-                margin-left: 1rem;
-                margin-right: 1rem;
-                padding: .25rem;
-                overflow: auto;
-                border-top-width: 2px;
-            }
-        }
-    }
 }
