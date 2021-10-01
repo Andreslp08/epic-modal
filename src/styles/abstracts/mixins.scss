@@ -84,6 +84,9 @@
 }
 
 @mixin epic-modal-scroll-style($background-color, $onbackground-color, $primary-color, $onprimary-color) {
+    scrollbar-color: $onbackground-color transparent;
+    scrollbar-width: thin;
+
     &::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem;
@@ -125,7 +128,8 @@
             top: -25%;
             right: -25%;
             background: $primaryColor;
-            border:solid 2px $onBackgroundColor;
+            border:none;
+            outline: none;
             color: $onPrimaryColor;
             $button-size: 40px;
             border-radius: 99999px;
@@ -220,7 +224,7 @@
     $onPrimaryColor,
     $shadowColor
 ) {
-    @include basic-epic-modal(#000);
+    @include basic-epic-modal($backdropColor);
     > .window {
         @include basic-epic-modal-window($backgroundColor, 90vw, 80vh);
         display: grid;
