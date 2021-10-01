@@ -1,18 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
-//default 
-$default-title:'Anton', Impact, sans-serif;
+//GENERAL
 $epic-modal-display:flex;
 $epic-modal-zindex:999999999;
-//default - LIGHT
+//DEFAULT
+$default-title:'Quicksand', sans-serif;
+//default - light
 $default-light-backdrop-color:rgba(0,0,0,.5);
 $default-light-background-color:#fff;
 $default-light-onbackground-color:#000;
-$default-light-primary-color:rgba(0, 115, 255, 1);
+$default-light-primary-color:rgb(0, 0, 0);
 $default-light-onprimary-color:#fff;
-//default - DARK
+// default - light - gold
+$default-light-gold-primary-color:rgb(255, 187, 0);
+$default-light-gold-onprimary-color:#fff;
+// default - light - salmon
+$default-light-salmon-primary-color:rgb(255, 94, 0);
+$default-light-salmon-onprimary-color:#fff;
+// default - light - blue
+$default-light-blue-primary-color:rgb(0, 115, 255);
+$default-light-blue-onprimary-color:#fff;
+// default - light - aqua
+$default-light-aqua-primary-color:rgb(1, 135, 99);
+$default-light-aqua-onprimary-color:#fff;
+//default - dark
 $default-dark-backdrop-color:rgba(0, 0, 0,.5);
 $default-dark-background-color:#222;
 $default-dark-onbackground-color:#fff;
-$default-dark-primary-color:rgba(0, 115, 255, 1);
-$default-dark-onprimary-color:#fff;
+$default-dark-primary-color:rgb(255, 255, 255);
+$default-dark-onprimary-color:rgb(0, 0, 0);
+// default - dark - gold
+$default-dark-gold-primary-color:rgb(255, 187, 0);
+$default-dark-gold-onprimary-color:#fff;
+// default - dark - salmon
+$default-dark-salmon-primary-color:rgb(255, 94, 0);
+$default-dark-salmon-onprimary-color:#fff;
+// default - dark - blue
+$default-dark-blue-primary-color:rgb(0, 115, 255);
+$default-dark-blue-onprimary-color:#fff;
+// default - dark - aqua
+$default-dark-aqua-primary-color:rgb(1, 135, 99);
+$default-dark-aqua-onprimary-color:#fff;
+
+// MINIMALISTIC
+$minimalistic-title:'Quicksand', sans-serif;
+//minimalistic - light
+$minimalistic-light-backdrop-color:rgba(0,0,0,.5);
+$minimalistic-light-background-color:#fff;
+$minimalistic-light-onbackground-color:#000;
+$minimalistic-light-primary-color:rgb(0, 0, 0);
+$minimalistic-light-onprimary-color:#fff;
+// minimalistic - light - gold
+$minimalistic-light-gold-primary-color:rgb(255, 187, 0);
+$minimalistic-light-gold-onprimary-color:#fff;
+// minimalistic - light - salmon
+$minimalistic-light-salmon-primary-color:rgb(255, 94, 0);
+$minimalistic-light-salmon-onprimary-color:#fff;
+// minimalistic - light - blue
+$minimalistic-light-blue-primary-color:rgb(0, 115, 255);
+$minimalistic-light-blue-onprimary-color:#fff;
+// minimalistic - light - aqua
+$minimalistic-light-aqua-primary-color:rgb(1, 135, 99);
+$minimalistic-light-aqua-onprimary-color:#fff;
+//minimalistic - dark
+$minimalistic-dark-backdrop-color:rgba(0, 0, 0,.5);
+$minimalistic-dark-background-color:#222;
+$minimalistic-dark-onbackground-color:#fff;
+$minimalistic-dark-primary-color:rgb(255, 255, 255);
+$minimalistic-dark-onprimary-color:rgb(0, 0, 0);
+// minimalistic - dark - gold
+$minimalistic-dark-gold-primary-color:rgb(255, 187, 0);
+$minimalistic-dark-gold-onprimary-color:#fff;
+// minimalistic - dark - salmon
+$minimalistic-dark-salmon-primary-color:rgb(255, 94, 0);
+$minimalistic-dark-salmon-onprimary-color:#fff;
+// minimalistic - dark - blue
+$minimalistic-dark-blue-primary-color:rgb(0, 115, 255);
+$minimalistic-dark-blue-onprimary-color:#fff;
+// minimalistic - dark - aqua
+$minimalistic-dark-aqua-primary-color:rgb(1, 135, 99);
+$minimalistic-dark-aqua-onprimary-color:#fff;
+
+// NEON
+$neon-title:'Quicksand', sans-serif;
+//neon - light
+$neon-light-backdrop-color:rgba(0,0,0,.5);
+$neon-light-background-color:linear-gradient(72.09deg, #898989 2.36%, #F9F9F9 105.75%, #FEFEFF 113.47%);
+$neon-light-background-shadow-color:linear-gradient(90deg, rgba(137, 137, 137, 0.6) 0%, rgba(255, 255, 255, 0.6) 97.04%);
+$neon-light-onbackground-color:#000;
+$neon-light-primary-color:rgb(0, 0, 0);
+$neon-light-onprimary-color:#fff;
+//neon - dark
+$neon-dark-backdrop-color:rgba(0,0,0,.5);
+$neon-dark-background-color:linear-gradient(45deg, #000000 25%, #3d3d3d 113.47%);
+$neon-dark-background-shadow-color:linear-gradient(90deg, rgba(106, 106, 106, 0.4) 0%, rgba(126, 126, 126, 0.4) 100%);
+$neon-dark-onbackground-color:#fff;
+$neon-dark-primary-color:rgb(255, 255, 255);
+$neon-dark-onprimary-color:rgb(0, 0, 0);
+//neon - gold
+$neon-gold-backdrop-color:rgba(0,0,0,.5);
+$neon-gold-background-color:linear-gradient(45deg, #362618 0%, #431000 0%, #B49701 118.55%);
+$neon-gold-background-shadow-color:linear-gradient(45deg, #362618 0%, #431000 0%, #B49701 118.55%);
+$neon-gold-onbackground-color:#fff;
+$neon-gold-primary-color:rgb(255, 255, 255);
+$neon-gold-onprimary-color:rgb(0, 0, 0);
+//neon - salmon
+$neon-salmon-backdrop-color:rgba(0,0,0,.5);
+$neon-salmon-background-color: linear-gradient(45deg, #390000 2.36%, #B94E00 113.47%);
+$neon-salmon-background-shadow-color: linear-gradient(45deg, #390000 2.36%, #B94E00 113.47%);
+$neon-salmon-onbackground-color:#fff;
+$neon-salmon-primary-color:rgb(255, 255, 255);
+$neon-salmon-onprimary-color:rgb(0, 0, 0);
+//neon - blue
+$neon-blue-backdrop-color:rgba(0,0,0,.5);
+$neon-blue-background-color: linear-gradient(45deg, #291836 2.38%, #18324A 99.3%);
+$neon-blue-background-shadow-color: linear-gradient(45deg, #291836 2.38%, #18324A 99.3%);
+$neon-blue-onbackground-color:#fff;
+$neon-blue-primary-color:rgb(255, 255, 255);
+$neon-blue-onprimary-color:rgb(0, 0, 0);
+//neon - aqua
+$neon-aqua-backdrop-color:rgba(0,0,0,.5);
+$neon-aqua-background-color:linear-gradient(45deg, #002134 2.38%, #007148 99.3%);
+$neon-aqua-background-shadow-color:linear-gradient(45deg, #002134 2.38%, #007148 99.3%);
+$neon-aqua-onbackground-color:#fff;
+$neon-aqua-primary-color:rgb(255, 255, 255);
+$neon-aqua-onprimary-color:rgb(0, 0, 0);
