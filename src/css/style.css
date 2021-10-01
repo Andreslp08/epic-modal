@@ -12,7 +12,7 @@
   .epic-modal::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -105,7 +105,7 @@
   .epic-modal.epic-modal-theme-default-light::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -223,7 +223,7 @@
   .epic-modal.epic-modal-theme-default-light-gold::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -341,7 +341,7 @@
   .epic-modal.epic-modal-theme-default-light-salmon::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -459,7 +459,7 @@
   .epic-modal.epic-modal-theme-default-light-blue::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -577,7 +577,7 @@
   .epic-modal.epic-modal-theme-default-light-aqua::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -695,7 +695,7 @@
   .epic-modal.epic-modal-theme-default-dark::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -813,7 +813,7 @@
   .epic-modal.epic-modal-theme-default-dark-gold::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -931,7 +931,7 @@
   .epic-modal.epic-modal-theme-default-dark-salmon::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -1049,7 +1049,7 @@
   .epic-modal.epic-modal-theme-default-dark-blue::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -1167,7 +1167,7 @@
   .epic-modal.epic-modal-theme-default-dark-aqua::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -1285,7 +1285,7 @@
   .epic-modal.epic-modal-theme-minimalist-light::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -1397,7 +1397,7 @@
   .epic-modal.epic-modal-theme-minimalist-light-gold::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -1509,7 +1509,7 @@
   .epic-modal.epic-modal-theme-minimalist-light-salmon::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -1621,7 +1621,7 @@
   .epic-modal.epic-modal-theme-minimalist-light-blue::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -1733,7 +1733,7 @@
   .epic-modal.epic-modal-theme-minimalist-light-aqua::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -1845,7 +1845,7 @@
   .epic-modal.epic-modal-theme-minimalist-dark::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -1957,7 +1957,7 @@
   .epic-modal.epic-modal-theme-minimalist-dark-gold::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -2069,7 +2069,7 @@
   .epic-modal.epic-modal-theme-minimalist-dark-salmon::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -2181,7 +2181,7 @@
   .epic-modal.epic-modal-theme-minimalist-dark-blue::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
@@ -2293,7 +2293,7 @@
   .epic-modal.epic-modal-theme-minimalist-dark-aqua::before {
     content: "";
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100vw;
