@@ -1,52 +1,50 @@
-import EpicModal from "./EpicModal.js";
-import defaultConfig from "./DefaultConfig.js";
-import { THEMES } from "./Constants.js";
+import { DEFAULT_INITIAL_PROPERTIES, THEMES } from "./Constants.js";
 
-const buildTemplate = (id = "", config = defaultConfig) => {
+const buildTemplate = (id = "", properties = DEFAULT_INITIAL_PROPERTIES) => {
     if (!id && id.length <= 0) { return undefined };
     let template = undefined;
-    switch (config.theme) {
+    switch (properties.theme) {
         case THEMES["default-light"]:
-            template = defaultTemplate(id, config);
+            template = defaultTemplate(id, properties);
             break;
             case THEMES["default-dark"]:
-            template = defaultTemplate(id, config);
+            template = defaultTemplate(id, properties);
             break;
             case THEMES["custom"]:
-            template = customTemplate(id, config);
+            template = customTemplate(id, properties);
             break;
         default:
-            config.theme = THEMES["default-light"];
-            template = defaultTemplate(id, config);
+            properties.theme = THEMES["default-light"];
+            template = defaultTemplate(id, properties);
             break;
     }
     return template;
 }
 
-const defaultTemplate = (id = "", config = defaultConfig) => {
+const defaultTemplate = (id = "", properties = DEFAULT_INITIAL_PROPERTIES) => {
     if (!id || id.length <= 0) { return undefined };
     return `
     <div class="epic-modal" 
         data-epic-modal-id="${id}"
-        data-epic-modal-config ='${JSON.stringify(config)}'>
+        data-epic-modal-properties ='${properties}'>
         <div class="window">
-            <p class="title">${config.title}</p>
+            <p class="title">${properties.title}</p>
             <button class="close-button" data-epic-modal-close-button="true" >x</button>
         <div class="content">
-            ${config.content}
+            ${properties.content}
             </div>
         </div>
     </div>
     `
 }
 
-const customTemplate = (id = "", config = defaultConfig) => {
+const customTemplate = (id = "", properties = DEFAULT_INITIAL_PROPERTIES) => {
     if (!id || id.length <= 0) { return undefined };
     return `
     <div class="epic-modal" 
     data-epic-modal-id="${id}"
-    data-epic-modal-config = '${JSON.stringify(config)}'>
-        ${config.customTemplate}
+    data-epic-modal-properties = '${properties}'>
+        ${properties.customTemplate}
     </div>
     `
 }
