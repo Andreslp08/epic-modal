@@ -1272,7 +1272,7 @@
           background: #018763;
           cursor: pointer; }
 
-.epic-modal.epic-modal-theme-minimalistic-light {
+.epic-modal.epic-modal-theme-minimalist-light {
   position: fixed;
   top: 0;
   left: 0;
@@ -1282,7 +1282,7 @@
   z-index: 999999999;
   justify-content: center;
   align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light::before {
+  .epic-modal.epic-modal-theme-minimalist-light::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1291,40 +1291,40 @@
     width: 100vw;
     height: 100vh;
     z-index: -1; }
-  .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-position-top-left {
+  .epic-modal.epic-modal-theme-minimalist-light.epic-modal-position-top-left {
     justify-content: left;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-position-top-center {
+  .epic-modal.epic-modal-theme-minimalist-light.epic-modal-position-top-center {
     justify-content: center;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-position-top-right {
+  .epic-modal.epic-modal-theme-minimalist-light.epic-modal-position-top-right {
     justify-content: right;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-position-center-left {
+  .epic-modal.epic-modal-theme-minimalist-light.epic-modal-position-center-left {
     justify-content: left;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-position-center-center {
+  .epic-modal.epic-modal-theme-minimalist-light.epic-modal-position-center-center {
     justify-content: center;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-position-center-right {
+  .epic-modal.epic-modal-theme-minimalist-light.epic-modal-position-center-right {
     justify-content: right;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-position-bottom-left {
+  .epic-modal.epic-modal-theme-minimalist-light.epic-modal-position-bottom-left {
     justify-content: left;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-position-bottom-center {
+  .epic-modal.epic-modal-theme-minimalist-light.epic-modal-position-bottom-center {
     justify-content: center;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-position-bottom-right {
+  .epic-modal.epic-modal-theme-minimalist-light.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-backdrop-click {
+  .epic-modal.epic-modal-theme-minimalist-light.epic-modal-backdrop-click {
     cursor: pointer; }
-    .epic-modal.epic-modal-theme-minimalistic-light.epic-modal-backdrop-click * {
+    .epic-modal.epic-modal-theme-minimalist-light.epic-modal-backdrop-click * {
       cursor: auto; }
-  .epic-modal.epic-modal-theme-minimalistic-light *[data-epic-modal-close-button="true"] {
+  .epic-modal.epic-modal-theme-minimalist-light *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
-  .epic-modal.epic-modal-theme-minimalistic-light > .window {
+  .epic-modal.epic-modal-theme-minimalist-light > .window {
     min-width: 200px;
     min-height: 200px;
     max-width: 90vw;
@@ -1336,7 +1336,7 @@
     grid-template-rows: min-content 1fr;
     border-radius: 0;
     border: solid 2.5px black; }
-    .epic-modal.epic-modal-theme-minimalistic-light > .window > .title {
+    .epic-modal.epic-modal-theme-minimalist-light > .window > .title {
       color: #000;
       font-family: "Quicksand", sans-serif;
       font-weight: normal;
@@ -1344,7 +1344,7 @@
       margin-left: 1rem;
       margin-top: 1rem;
       overflow: hidden; }
-    .epic-modal.epic-modal-theme-minimalistic-light > .window > .close-button {
+    .epic-modal.epic-modal-theme-minimalist-light > .window > .close-button {
       font-family: "Quicksand", sans-serif;
       background-color: transparent;
       color: black;
@@ -1356,9 +1356,9 @@
       border: none;
       outline: none;
       transition: transform 0.3s; }
-      .epic-modal.epic-modal-theme-minimalistic-light > .window > .close-button:hover {
+      .epic-modal.epic-modal-theme-minimalist-light > .window > .close-button:hover {
         transform: rotateZ(360deg); }
-    .epic-modal.epic-modal-theme-minimalistic-light > .window > .content {
+    .epic-modal.epic-modal-theme-minimalist-light > .window > .content {
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
@@ -1372,19 +1372,19 @@
       padding: 0.25rem;
       overflow: auto;
       border-top-width: 2px; }
-      .epic-modal.epic-modal-theme-minimalistic-light > .window > .content::-webkit-scrollbar {
+      .epic-modal.epic-modal-theme-minimalist-light > .window > .content::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem; }
-      .epic-modal.epic-modal-theme-minimalistic-light > .window > .content::-webkit-scrollbar-track {
+      .epic-modal.epic-modal-theme-minimalist-light > .window > .content::-webkit-scrollbar-track {
         background: #fff; }
-      .epic-modal.epic-modal-theme-minimalistic-light > .window > .content::-webkit-scrollbar-thumb {
+      .epic-modal.epic-modal-theme-minimalist-light > .window > .content::-webkit-scrollbar-thumb {
         background: #000;
         border-radius: 999px; }
-        .epic-modal.epic-modal-theme-minimalistic-light > .window > .content::-webkit-scrollbar-thumb:hover {
+        .epic-modal.epic-modal-theme-minimalist-light > .window > .content::-webkit-scrollbar-thumb:hover {
           background: black;
           cursor: pointer; }
 
-.epic-modal.epic-modal-theme-minimalistic-light-gold {
+.epic-modal.epic-modal-theme-minimalist-light-gold {
   position: fixed;
   top: 0;
   left: 0;
@@ -1394,7 +1394,7 @@
   z-index: 999999999;
   justify-content: center;
   align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold::before {
+  .epic-modal.epic-modal-theme-minimalist-light-gold::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1403,40 +1403,40 @@
     width: 100vw;
     height: 100vh;
     z-index: -1; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-position-top-left {
+  .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-position-top-left {
     justify-content: left;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-position-top-center {
+  .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-position-top-center {
     justify-content: center;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-position-top-right {
+  .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-position-top-right {
     justify-content: right;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-position-center-left {
+  .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-position-center-left {
     justify-content: left;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-position-center-center {
+  .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-position-center-center {
     justify-content: center;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-position-center-right {
+  .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-position-center-right {
     justify-content: right;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-position-bottom-left {
+  .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-position-bottom-left {
     justify-content: left;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-position-bottom-center {
+  .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-position-bottom-center {
     justify-content: center;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-position-bottom-right {
+  .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-backdrop-click {
+  .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-backdrop-click {
     cursor: pointer; }
-    .epic-modal.epic-modal-theme-minimalistic-light-gold.epic-modal-backdrop-click * {
+    .epic-modal.epic-modal-theme-minimalist-light-gold.epic-modal-backdrop-click * {
       cursor: auto; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold *[data-epic-modal-close-button="true"] {
+  .epic-modal.epic-modal-theme-minimalist-light-gold *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
-  .epic-modal.epic-modal-theme-minimalistic-light-gold > .window {
+  .epic-modal.epic-modal-theme-minimalist-light-gold > .window {
     min-width: 200px;
     min-height: 200px;
     max-width: 90vw;
@@ -1448,7 +1448,7 @@
     grid-template-rows: min-content 1fr;
     border-radius: 0;
     border: solid 2.5px #ffbb00; }
-    .epic-modal.epic-modal-theme-minimalistic-light-gold > .window > .title {
+    .epic-modal.epic-modal-theme-minimalist-light-gold > .window > .title {
       color: #000;
       font-family: "Quicksand", sans-serif;
       font-weight: normal;
@@ -1456,7 +1456,7 @@
       margin-left: 1rem;
       margin-top: 1rem;
       overflow: hidden; }
-    .epic-modal.epic-modal-theme-minimalistic-light-gold > .window > .close-button {
+    .epic-modal.epic-modal-theme-minimalist-light-gold > .window > .close-button {
       font-family: "Quicksand", sans-serif;
       background-color: transparent;
       color: #ffbb00;
@@ -1468,9 +1468,9 @@
       border: none;
       outline: none;
       transition: transform 0.3s; }
-      .epic-modal.epic-modal-theme-minimalistic-light-gold > .window > .close-button:hover {
+      .epic-modal.epic-modal-theme-minimalist-light-gold > .window > .close-button:hover {
         transform: rotateZ(360deg); }
-    .epic-modal.epic-modal-theme-minimalistic-light-gold > .window > .content {
+    .epic-modal.epic-modal-theme-minimalist-light-gold > .window > .content {
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
@@ -1484,19 +1484,19 @@
       padding: 0.25rem;
       overflow: auto;
       border-top-width: 2px; }
-      .epic-modal.epic-modal-theme-minimalistic-light-gold > .window > .content::-webkit-scrollbar {
+      .epic-modal.epic-modal-theme-minimalist-light-gold > .window > .content::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem; }
-      .epic-modal.epic-modal-theme-minimalistic-light-gold > .window > .content::-webkit-scrollbar-track {
+      .epic-modal.epic-modal-theme-minimalist-light-gold > .window > .content::-webkit-scrollbar-track {
         background: #fff; }
-      .epic-modal.epic-modal-theme-minimalistic-light-gold > .window > .content::-webkit-scrollbar-thumb {
+      .epic-modal.epic-modal-theme-minimalist-light-gold > .window > .content::-webkit-scrollbar-thumb {
         background: #000;
         border-radius: 999px; }
-        .epic-modal.epic-modal-theme-minimalistic-light-gold > .window > .content::-webkit-scrollbar-thumb:hover {
+        .epic-modal.epic-modal-theme-minimalist-light-gold > .window > .content::-webkit-scrollbar-thumb:hover {
           background: #ffbb00;
           cursor: pointer; }
 
-.epic-modal.epic-modal-theme-minimalistic-light-salmon {
+.epic-modal.epic-modal-theme-minimalist-light-salmon {
   position: fixed;
   top: 0;
   left: 0;
@@ -1506,7 +1506,7 @@
   z-index: 999999999;
   justify-content: center;
   align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon::before {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1515,40 +1515,40 @@
     width: 100vw;
     height: 100vh;
     z-index: -1; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-position-top-left {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-position-top-left {
     justify-content: left;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-position-top-center {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-position-top-center {
     justify-content: center;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-position-top-right {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-position-top-right {
     justify-content: right;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-position-center-left {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-position-center-left {
     justify-content: left;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-position-center-center {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-position-center-center {
     justify-content: center;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-position-center-right {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-position-center-right {
     justify-content: right;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-position-bottom-left {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-position-bottom-left {
     justify-content: left;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-position-bottom-center {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-position-bottom-center {
     justify-content: center;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-position-bottom-right {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-backdrop-click {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-backdrop-click {
     cursor: pointer; }
-    .epic-modal.epic-modal-theme-minimalistic-light-salmon.epic-modal-backdrop-click * {
+    .epic-modal.epic-modal-theme-minimalist-light-salmon.epic-modal-backdrop-click * {
       cursor: auto; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon *[data-epic-modal-close-button="true"] {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
-  .epic-modal.epic-modal-theme-minimalistic-light-salmon > .window {
+  .epic-modal.epic-modal-theme-minimalist-light-salmon > .window {
     min-width: 200px;
     min-height: 200px;
     max-width: 90vw;
@@ -1560,7 +1560,7 @@
     grid-template-rows: min-content 1fr;
     border-radius: 0;
     border: solid 2.5px #ff5e00; }
-    .epic-modal.epic-modal-theme-minimalistic-light-salmon > .window > .title {
+    .epic-modal.epic-modal-theme-minimalist-light-salmon > .window > .title {
       color: #000;
       font-family: "Quicksand", sans-serif;
       font-weight: normal;
@@ -1568,7 +1568,7 @@
       margin-left: 1rem;
       margin-top: 1rem;
       overflow: hidden; }
-    .epic-modal.epic-modal-theme-minimalistic-light-salmon > .window > .close-button {
+    .epic-modal.epic-modal-theme-minimalist-light-salmon > .window > .close-button {
       font-family: "Quicksand", sans-serif;
       background-color: transparent;
       color: #ff5e00;
@@ -1580,9 +1580,9 @@
       border: none;
       outline: none;
       transition: transform 0.3s; }
-      .epic-modal.epic-modal-theme-minimalistic-light-salmon > .window > .close-button:hover {
+      .epic-modal.epic-modal-theme-minimalist-light-salmon > .window > .close-button:hover {
         transform: rotateZ(360deg); }
-    .epic-modal.epic-modal-theme-minimalistic-light-salmon > .window > .content {
+    .epic-modal.epic-modal-theme-minimalist-light-salmon > .window > .content {
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
@@ -1596,19 +1596,19 @@
       padding: 0.25rem;
       overflow: auto;
       border-top-width: 2px; }
-      .epic-modal.epic-modal-theme-minimalistic-light-salmon > .window > .content::-webkit-scrollbar {
+      .epic-modal.epic-modal-theme-minimalist-light-salmon > .window > .content::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem; }
-      .epic-modal.epic-modal-theme-minimalistic-light-salmon > .window > .content::-webkit-scrollbar-track {
+      .epic-modal.epic-modal-theme-minimalist-light-salmon > .window > .content::-webkit-scrollbar-track {
         background: #fff; }
-      .epic-modal.epic-modal-theme-minimalistic-light-salmon > .window > .content::-webkit-scrollbar-thumb {
+      .epic-modal.epic-modal-theme-minimalist-light-salmon > .window > .content::-webkit-scrollbar-thumb {
         background: #000;
         border-radius: 999px; }
-        .epic-modal.epic-modal-theme-minimalistic-light-salmon > .window > .content::-webkit-scrollbar-thumb:hover {
+        .epic-modal.epic-modal-theme-minimalist-light-salmon > .window > .content::-webkit-scrollbar-thumb:hover {
           background: #ff5e00;
           cursor: pointer; }
 
-.epic-modal.epic-modal-theme-minimalistic-light-blue {
+.epic-modal.epic-modal-theme-minimalist-light-blue {
   position: fixed;
   top: 0;
   left: 0;
@@ -1618,7 +1618,7 @@
   z-index: 999999999;
   justify-content: center;
   align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue::before {
+  .epic-modal.epic-modal-theme-minimalist-light-blue::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1627,40 +1627,40 @@
     width: 100vw;
     height: 100vh;
     z-index: -1; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-position-top-left {
+  .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-position-top-left {
     justify-content: left;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-position-top-center {
+  .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-position-top-center {
     justify-content: center;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-position-top-right {
+  .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-position-top-right {
     justify-content: right;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-position-center-left {
+  .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-position-center-left {
     justify-content: left;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-position-center-center {
+  .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-position-center-center {
     justify-content: center;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-position-center-right {
+  .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-position-center-right {
     justify-content: right;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-position-bottom-left {
+  .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-position-bottom-left {
     justify-content: left;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-position-bottom-center {
+  .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-position-bottom-center {
     justify-content: center;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-position-bottom-right {
+  .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-backdrop-click {
+  .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-backdrop-click {
     cursor: pointer; }
-    .epic-modal.epic-modal-theme-minimalistic-light-blue.epic-modal-backdrop-click * {
+    .epic-modal.epic-modal-theme-minimalist-light-blue.epic-modal-backdrop-click * {
       cursor: auto; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue *[data-epic-modal-close-button="true"] {
+  .epic-modal.epic-modal-theme-minimalist-light-blue *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
-  .epic-modal.epic-modal-theme-minimalistic-light-blue > .window {
+  .epic-modal.epic-modal-theme-minimalist-light-blue > .window {
     min-width: 200px;
     min-height: 200px;
     max-width: 90vw;
@@ -1672,7 +1672,7 @@
     grid-template-rows: min-content 1fr;
     border-radius: 0;
     border: solid 2.5px #0073ff; }
-    .epic-modal.epic-modal-theme-minimalistic-light-blue > .window > .title {
+    .epic-modal.epic-modal-theme-minimalist-light-blue > .window > .title {
       color: #000;
       font-family: "Quicksand", sans-serif;
       font-weight: normal;
@@ -1680,7 +1680,7 @@
       margin-left: 1rem;
       margin-top: 1rem;
       overflow: hidden; }
-    .epic-modal.epic-modal-theme-minimalistic-light-blue > .window > .close-button {
+    .epic-modal.epic-modal-theme-minimalist-light-blue > .window > .close-button {
       font-family: "Quicksand", sans-serif;
       background-color: transparent;
       color: #0073ff;
@@ -1692,9 +1692,9 @@
       border: none;
       outline: none;
       transition: transform 0.3s; }
-      .epic-modal.epic-modal-theme-minimalistic-light-blue > .window > .close-button:hover {
+      .epic-modal.epic-modal-theme-minimalist-light-blue > .window > .close-button:hover {
         transform: rotateZ(360deg); }
-    .epic-modal.epic-modal-theme-minimalistic-light-blue > .window > .content {
+    .epic-modal.epic-modal-theme-minimalist-light-blue > .window > .content {
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
@@ -1708,19 +1708,19 @@
       padding: 0.25rem;
       overflow: auto;
       border-top-width: 2px; }
-      .epic-modal.epic-modal-theme-minimalistic-light-blue > .window > .content::-webkit-scrollbar {
+      .epic-modal.epic-modal-theme-minimalist-light-blue > .window > .content::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem; }
-      .epic-modal.epic-modal-theme-minimalistic-light-blue > .window > .content::-webkit-scrollbar-track {
+      .epic-modal.epic-modal-theme-minimalist-light-blue > .window > .content::-webkit-scrollbar-track {
         background: #fff; }
-      .epic-modal.epic-modal-theme-minimalistic-light-blue > .window > .content::-webkit-scrollbar-thumb {
+      .epic-modal.epic-modal-theme-minimalist-light-blue > .window > .content::-webkit-scrollbar-thumb {
         background: #000;
         border-radius: 999px; }
-        .epic-modal.epic-modal-theme-minimalistic-light-blue > .window > .content::-webkit-scrollbar-thumb:hover {
+        .epic-modal.epic-modal-theme-minimalist-light-blue > .window > .content::-webkit-scrollbar-thumb:hover {
           background: #0073ff;
           cursor: pointer; }
 
-.epic-modal.epic-modal-theme-minimalistic-light-aqua {
+.epic-modal.epic-modal-theme-minimalist-light-aqua {
   position: fixed;
   top: 0;
   left: 0;
@@ -1730,7 +1730,7 @@
   z-index: 999999999;
   justify-content: center;
   align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua::before {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1739,40 +1739,40 @@
     width: 100vw;
     height: 100vh;
     z-index: -1; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-position-top-left {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-position-top-left {
     justify-content: left;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-position-top-center {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-position-top-center {
     justify-content: center;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-position-top-right {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-position-top-right {
     justify-content: right;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-position-center-left {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-position-center-left {
     justify-content: left;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-position-center-center {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-position-center-center {
     justify-content: center;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-position-center-right {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-position-center-right {
     justify-content: right;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-position-bottom-left {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-position-bottom-left {
     justify-content: left;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-position-bottom-center {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-position-bottom-center {
     justify-content: center;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-position-bottom-right {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-backdrop-click {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-backdrop-click {
     cursor: pointer; }
-    .epic-modal.epic-modal-theme-minimalistic-light-aqua.epic-modal-backdrop-click * {
+    .epic-modal.epic-modal-theme-minimalist-light-aqua.epic-modal-backdrop-click * {
       cursor: auto; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua *[data-epic-modal-close-button="true"] {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
-  .epic-modal.epic-modal-theme-minimalistic-light-aqua > .window {
+  .epic-modal.epic-modal-theme-minimalist-light-aqua > .window {
     min-width: 200px;
     min-height: 200px;
     max-width: 90vw;
@@ -1784,7 +1784,7 @@
     grid-template-rows: min-content 1fr;
     border-radius: 0;
     border: solid 2.5px #018763; }
-    .epic-modal.epic-modal-theme-minimalistic-light-aqua > .window > .title {
+    .epic-modal.epic-modal-theme-minimalist-light-aqua > .window > .title {
       color: #000;
       font-family: "Quicksand", sans-serif;
       font-weight: normal;
@@ -1792,7 +1792,7 @@
       margin-left: 1rem;
       margin-top: 1rem;
       overflow: hidden; }
-    .epic-modal.epic-modal-theme-minimalistic-light-aqua > .window > .close-button {
+    .epic-modal.epic-modal-theme-minimalist-light-aqua > .window > .close-button {
       font-family: "Quicksand", sans-serif;
       background-color: transparent;
       color: #018763;
@@ -1804,9 +1804,9 @@
       border: none;
       outline: none;
       transition: transform 0.3s; }
-      .epic-modal.epic-modal-theme-minimalistic-light-aqua > .window > .close-button:hover {
+      .epic-modal.epic-modal-theme-minimalist-light-aqua > .window > .close-button:hover {
         transform: rotateZ(360deg); }
-    .epic-modal.epic-modal-theme-minimalistic-light-aqua > .window > .content {
+    .epic-modal.epic-modal-theme-minimalist-light-aqua > .window > .content {
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #000;
@@ -1820,19 +1820,19 @@
       padding: 0.25rem;
       overflow: auto;
       border-top-width: 2px; }
-      .epic-modal.epic-modal-theme-minimalistic-light-aqua > .window > .content::-webkit-scrollbar {
+      .epic-modal.epic-modal-theme-minimalist-light-aqua > .window > .content::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem; }
-      .epic-modal.epic-modal-theme-minimalistic-light-aqua > .window > .content::-webkit-scrollbar-track {
+      .epic-modal.epic-modal-theme-minimalist-light-aqua > .window > .content::-webkit-scrollbar-track {
         background: #fff; }
-      .epic-modal.epic-modal-theme-minimalistic-light-aqua > .window > .content::-webkit-scrollbar-thumb {
+      .epic-modal.epic-modal-theme-minimalist-light-aqua > .window > .content::-webkit-scrollbar-thumb {
         background: #000;
         border-radius: 999px; }
-        .epic-modal.epic-modal-theme-minimalistic-light-aqua > .window > .content::-webkit-scrollbar-thumb:hover {
+        .epic-modal.epic-modal-theme-minimalist-light-aqua > .window > .content::-webkit-scrollbar-thumb:hover {
           background: #018763;
           cursor: pointer; }
 
-.epic-modal.epic-modal-theme-minimalistic-dark {
+.epic-modal.epic-modal-theme-minimalist-dark {
   position: fixed;
   top: 0;
   left: 0;
@@ -1842,7 +1842,7 @@
   z-index: 999999999;
   justify-content: center;
   align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark::before {
+  .epic-modal.epic-modal-theme-minimalist-dark::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1851,40 +1851,40 @@
     width: 100vw;
     height: 100vh;
     z-index: -1; }
-  .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-position-top-left {
+  .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-position-top-left {
     justify-content: left;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-position-top-center {
+  .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-position-top-center {
     justify-content: center;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-position-top-right {
+  .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-position-top-right {
     justify-content: right;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-position-center-left {
+  .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-position-center-left {
     justify-content: left;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-position-center-center {
+  .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-position-center-center {
     justify-content: center;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-position-center-right {
+  .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-position-center-right {
     justify-content: right;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-position-bottom-left {
+  .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-position-bottom-left {
     justify-content: left;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-position-bottom-center {
+  .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-position-bottom-center {
     justify-content: center;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-position-bottom-right {
+  .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-backdrop-click {
+  .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-backdrop-click {
     cursor: pointer; }
-    .epic-modal.epic-modal-theme-minimalistic-dark.epic-modal-backdrop-click * {
+    .epic-modal.epic-modal-theme-minimalist-dark.epic-modal-backdrop-click * {
       cursor: auto; }
-  .epic-modal.epic-modal-theme-minimalistic-dark *[data-epic-modal-close-button="true"] {
+  .epic-modal.epic-modal-theme-minimalist-dark *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
-  .epic-modal.epic-modal-theme-minimalistic-dark > .window {
+  .epic-modal.epic-modal-theme-minimalist-dark > .window {
     min-width: 200px;
     min-height: 200px;
     max-width: 90vw;
@@ -1896,7 +1896,7 @@
     grid-template-rows: min-content 1fr;
     border-radius: 0;
     border: solid 2.5px white; }
-    .epic-modal.epic-modal-theme-minimalistic-dark > .window > .title {
+    .epic-modal.epic-modal-theme-minimalist-dark > .window > .title {
       color: #fff;
       font-family: "Quicksand", sans-serif;
       font-weight: normal;
@@ -1904,7 +1904,7 @@
       margin-left: 1rem;
       margin-top: 1rem;
       overflow: hidden; }
-    .epic-modal.epic-modal-theme-minimalistic-dark > .window > .close-button {
+    .epic-modal.epic-modal-theme-minimalist-dark > .window > .close-button {
       font-family: "Quicksand", sans-serif;
       background-color: transparent;
       color: white;
@@ -1916,9 +1916,9 @@
       border: none;
       outline: none;
       transition: transform 0.3s; }
-      .epic-modal.epic-modal-theme-minimalistic-dark > .window > .close-button:hover {
+      .epic-modal.epic-modal-theme-minimalist-dark > .window > .close-button:hover {
         transform: rotateZ(360deg); }
-    .epic-modal.epic-modal-theme-minimalistic-dark > .window > .content {
+    .epic-modal.epic-modal-theme-minimalist-dark > .window > .content {
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
@@ -1932,19 +1932,19 @@
       padding: 0.25rem;
       overflow: auto;
       border-top-width: 2px; }
-      .epic-modal.epic-modal-theme-minimalistic-dark > .window > .content::-webkit-scrollbar {
+      .epic-modal.epic-modal-theme-minimalist-dark > .window > .content::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem; }
-      .epic-modal.epic-modal-theme-minimalistic-dark > .window > .content::-webkit-scrollbar-track {
+      .epic-modal.epic-modal-theme-minimalist-dark > .window > .content::-webkit-scrollbar-track {
         background: #222; }
-      .epic-modal.epic-modal-theme-minimalistic-dark > .window > .content::-webkit-scrollbar-thumb {
+      .epic-modal.epic-modal-theme-minimalist-dark > .window > .content::-webkit-scrollbar-thumb {
         background: #fff;
         border-radius: 999px; }
-        .epic-modal.epic-modal-theme-minimalistic-dark > .window > .content::-webkit-scrollbar-thumb:hover {
+        .epic-modal.epic-modal-theme-minimalist-dark > .window > .content::-webkit-scrollbar-thumb:hover {
           background: white;
           cursor: pointer; }
 
-.epic-modal.epic-modal-theme-minimalistic-dark-gold {
+.epic-modal.epic-modal-theme-minimalist-dark-gold {
   position: fixed;
   top: 0;
   left: 0;
@@ -1954,7 +1954,7 @@
   z-index: 999999999;
   justify-content: center;
   align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold::before {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1963,40 +1963,40 @@
     width: 100vw;
     height: 100vh;
     z-index: -1; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-position-top-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-position-top-left {
     justify-content: left;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-position-top-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-position-top-center {
     justify-content: center;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-position-top-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-position-top-right {
     justify-content: right;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-position-center-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-position-center-left {
     justify-content: left;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-position-center-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-position-center-center {
     justify-content: center;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-position-center-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-position-center-right {
     justify-content: right;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-position-bottom-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-position-bottom-left {
     justify-content: left;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-position-bottom-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-position-bottom-center {
     justify-content: center;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-position-bottom-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-backdrop-click {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-backdrop-click {
     cursor: pointer; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-gold.epic-modal-backdrop-click * {
+    .epic-modal.epic-modal-theme-minimalist-dark-gold.epic-modal-backdrop-click * {
       cursor: auto; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold *[data-epic-modal-close-button="true"] {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-gold > .window {
+  .epic-modal.epic-modal-theme-minimalist-dark-gold > .window {
     min-width: 200px;
     min-height: 200px;
     max-width: 90vw;
@@ -2008,7 +2008,7 @@
     grid-template-rows: min-content 1fr;
     border-radius: 0;
     border: solid 2.5px #ffbb00; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-gold > .window > .title {
+    .epic-modal.epic-modal-theme-minimalist-dark-gold > .window > .title {
       color: #fff;
       font-family: "Quicksand", sans-serif;
       font-weight: normal;
@@ -2016,7 +2016,7 @@
       margin-left: 1rem;
       margin-top: 1rem;
       overflow: hidden; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-gold > .window > .close-button {
+    .epic-modal.epic-modal-theme-minimalist-dark-gold > .window > .close-button {
       font-family: "Quicksand", sans-serif;
       background-color: transparent;
       color: #ffbb00;
@@ -2028,9 +2028,9 @@
       border: none;
       outline: none;
       transition: transform 0.3s; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-gold > .window > .close-button:hover {
+      .epic-modal.epic-modal-theme-minimalist-dark-gold > .window > .close-button:hover {
         transform: rotateZ(360deg); }
-    .epic-modal.epic-modal-theme-minimalistic-dark-gold > .window > .content {
+    .epic-modal.epic-modal-theme-minimalist-dark-gold > .window > .content {
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
@@ -2044,19 +2044,19 @@
       padding: 0.25rem;
       overflow: auto;
       border-top-width: 2px; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-gold > .window > .content::-webkit-scrollbar {
+      .epic-modal.epic-modal-theme-minimalist-dark-gold > .window > .content::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-gold > .window > .content::-webkit-scrollbar-track {
+      .epic-modal.epic-modal-theme-minimalist-dark-gold > .window > .content::-webkit-scrollbar-track {
         background: #222; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-gold > .window > .content::-webkit-scrollbar-thumb {
+      .epic-modal.epic-modal-theme-minimalist-dark-gold > .window > .content::-webkit-scrollbar-thumb {
         background: #fff;
         border-radius: 999px; }
-        .epic-modal.epic-modal-theme-minimalistic-dark-gold > .window > .content::-webkit-scrollbar-thumb:hover {
+        .epic-modal.epic-modal-theme-minimalist-dark-gold > .window > .content::-webkit-scrollbar-thumb:hover {
           background: #ffbb00;
           cursor: pointer; }
 
-.epic-modal.epic-modal-theme-minimalistic-dark-salmon {
+.epic-modal.epic-modal-theme-minimalist-dark-salmon {
   position: fixed;
   top: 0;
   left: 0;
@@ -2066,7 +2066,7 @@
   z-index: 999999999;
   justify-content: center;
   align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon::before {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -2075,40 +2075,40 @@
     width: 100vw;
     height: 100vh;
     z-index: -1; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-position-top-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-position-top-left {
     justify-content: left;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-position-top-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-position-top-center {
     justify-content: center;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-position-top-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-position-top-right {
     justify-content: right;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-position-center-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-position-center-left {
     justify-content: left;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-position-center-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-position-center-center {
     justify-content: center;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-position-center-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-position-center-right {
     justify-content: right;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-position-bottom-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-position-bottom-left {
     justify-content: left;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-position-bottom-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-position-bottom-center {
     justify-content: center;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-position-bottom-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-backdrop-click {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-backdrop-click {
     cursor: pointer; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-salmon.epic-modal-backdrop-click * {
+    .epic-modal.epic-modal-theme-minimalist-dark-salmon.epic-modal-backdrop-click * {
       cursor: auto; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon *[data-epic-modal-close-button="true"] {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-salmon > .window {
+  .epic-modal.epic-modal-theme-minimalist-dark-salmon > .window {
     min-width: 200px;
     min-height: 200px;
     max-width: 90vw;
@@ -2120,7 +2120,7 @@
     grid-template-rows: min-content 1fr;
     border-radius: 0;
     border: solid 2.5px #ff5e00; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-salmon > .window > .title {
+    .epic-modal.epic-modal-theme-minimalist-dark-salmon > .window > .title {
       color: #fff;
       font-family: "Quicksand", sans-serif;
       font-weight: normal;
@@ -2128,7 +2128,7 @@
       margin-left: 1rem;
       margin-top: 1rem;
       overflow: hidden; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-salmon > .window > .close-button {
+    .epic-modal.epic-modal-theme-minimalist-dark-salmon > .window > .close-button {
       font-family: "Quicksand", sans-serif;
       background-color: transparent;
       color: #ff5e00;
@@ -2140,9 +2140,9 @@
       border: none;
       outline: none;
       transition: transform 0.3s; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-salmon > .window > .close-button:hover {
+      .epic-modal.epic-modal-theme-minimalist-dark-salmon > .window > .close-button:hover {
         transform: rotateZ(360deg); }
-    .epic-modal.epic-modal-theme-minimalistic-dark-salmon > .window > .content {
+    .epic-modal.epic-modal-theme-minimalist-dark-salmon > .window > .content {
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
@@ -2156,19 +2156,19 @@
       padding: 0.25rem;
       overflow: auto;
       border-top-width: 2px; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-salmon > .window > .content::-webkit-scrollbar {
+      .epic-modal.epic-modal-theme-minimalist-dark-salmon > .window > .content::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-salmon > .window > .content::-webkit-scrollbar-track {
+      .epic-modal.epic-modal-theme-minimalist-dark-salmon > .window > .content::-webkit-scrollbar-track {
         background: #222; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-salmon > .window > .content::-webkit-scrollbar-thumb {
+      .epic-modal.epic-modal-theme-minimalist-dark-salmon > .window > .content::-webkit-scrollbar-thumb {
         background: #fff;
         border-radius: 999px; }
-        .epic-modal.epic-modal-theme-minimalistic-dark-salmon > .window > .content::-webkit-scrollbar-thumb:hover {
+        .epic-modal.epic-modal-theme-minimalist-dark-salmon > .window > .content::-webkit-scrollbar-thumb:hover {
           background: #ff5e00;
           cursor: pointer; }
 
-.epic-modal.epic-modal-theme-minimalistic-dark-blue {
+.epic-modal.epic-modal-theme-minimalist-dark-blue {
   position: fixed;
   top: 0;
   left: 0;
@@ -2178,7 +2178,7 @@
   z-index: 999999999;
   justify-content: center;
   align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue::before {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -2187,40 +2187,40 @@
     width: 100vw;
     height: 100vh;
     z-index: -1; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-position-top-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-position-top-left {
     justify-content: left;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-position-top-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-position-top-center {
     justify-content: center;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-position-top-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-position-top-right {
     justify-content: right;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-position-center-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-position-center-left {
     justify-content: left;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-position-center-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-position-center-center {
     justify-content: center;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-position-center-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-position-center-right {
     justify-content: right;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-position-bottom-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-position-bottom-left {
     justify-content: left;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-position-bottom-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-position-bottom-center {
     justify-content: center;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-position-bottom-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-backdrop-click {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-backdrop-click {
     cursor: pointer; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-blue.epic-modal-backdrop-click * {
+    .epic-modal.epic-modal-theme-minimalist-dark-blue.epic-modal-backdrop-click * {
       cursor: auto; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue *[data-epic-modal-close-button="true"] {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-blue > .window {
+  .epic-modal.epic-modal-theme-minimalist-dark-blue > .window {
     min-width: 200px;
     min-height: 200px;
     max-width: 90vw;
@@ -2232,7 +2232,7 @@
     grid-template-rows: min-content 1fr;
     border-radius: 0;
     border: solid 2.5px #0073ff; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-blue > .window > .title {
+    .epic-modal.epic-modal-theme-minimalist-dark-blue > .window > .title {
       color: #fff;
       font-family: "Quicksand", sans-serif;
       font-weight: normal;
@@ -2240,7 +2240,7 @@
       margin-left: 1rem;
       margin-top: 1rem;
       overflow: hidden; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-blue > .window > .close-button {
+    .epic-modal.epic-modal-theme-minimalist-dark-blue > .window > .close-button {
       font-family: "Quicksand", sans-serif;
       background-color: transparent;
       color: #0073ff;
@@ -2252,9 +2252,9 @@
       border: none;
       outline: none;
       transition: transform 0.3s; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-blue > .window > .close-button:hover {
+      .epic-modal.epic-modal-theme-minimalist-dark-blue > .window > .close-button:hover {
         transform: rotateZ(360deg); }
-    .epic-modal.epic-modal-theme-minimalistic-dark-blue > .window > .content {
+    .epic-modal.epic-modal-theme-minimalist-dark-blue > .window > .content {
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
@@ -2268,19 +2268,19 @@
       padding: 0.25rem;
       overflow: auto;
       border-top-width: 2px; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-blue > .window > .content::-webkit-scrollbar {
+      .epic-modal.epic-modal-theme-minimalist-dark-blue > .window > .content::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-blue > .window > .content::-webkit-scrollbar-track {
+      .epic-modal.epic-modal-theme-minimalist-dark-blue > .window > .content::-webkit-scrollbar-track {
         background: #222; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-blue > .window > .content::-webkit-scrollbar-thumb {
+      .epic-modal.epic-modal-theme-minimalist-dark-blue > .window > .content::-webkit-scrollbar-thumb {
         background: #fff;
         border-radius: 999px; }
-        .epic-modal.epic-modal-theme-minimalistic-dark-blue > .window > .content::-webkit-scrollbar-thumb:hover {
+        .epic-modal.epic-modal-theme-minimalist-dark-blue > .window > .content::-webkit-scrollbar-thumb:hover {
           background: #0073ff;
           cursor: pointer; }
 
-.epic-modal.epic-modal-theme-minimalistic-dark-aqua {
+.epic-modal.epic-modal-theme-minimalist-dark-aqua {
   position: fixed;
   top: 0;
   left: 0;
@@ -2290,7 +2290,7 @@
   z-index: 999999999;
   justify-content: center;
   align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua::before {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua::before {
     content: "";
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
@@ -2299,40 +2299,40 @@
     width: 100vw;
     height: 100vh;
     z-index: -1; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-position-top-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-position-top-left {
     justify-content: left;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-position-top-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-position-top-center {
     justify-content: center;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-position-top-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-position-top-right {
     justify-content: right;
     align-items: flex-start; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-position-center-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-position-center-left {
     justify-content: left;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-position-center-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-position-center-center {
     justify-content: center;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-position-center-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-position-center-right {
     justify-content: right;
     align-items: center; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-position-bottom-left {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-position-bottom-left {
     justify-content: left;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-position-bottom-center {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-position-bottom-center {
     justify-content: center;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-position-bottom-right {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-position-bottom-right {
     justify-content: right;
     align-items: flex-end; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-backdrop-click {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-backdrop-click {
     cursor: pointer; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-aqua.epic-modal-backdrop-click * {
+    .epic-modal.epic-modal-theme-minimalist-dark-aqua.epic-modal-backdrop-click * {
       cursor: auto; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua *[data-epic-modal-close-button="true"] {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
-  .epic-modal.epic-modal-theme-minimalistic-dark-aqua > .window {
+  .epic-modal.epic-modal-theme-minimalist-dark-aqua > .window {
     min-width: 200px;
     min-height: 200px;
     max-width: 90vw;
@@ -2344,7 +2344,7 @@
     grid-template-rows: min-content 1fr;
     border-radius: 0;
     border: solid 2.5px #018763; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-aqua > .window > .title {
+    .epic-modal.epic-modal-theme-minimalist-dark-aqua > .window > .title {
       color: #fff;
       font-family: "Quicksand", sans-serif;
       font-weight: normal;
@@ -2352,7 +2352,7 @@
       margin-left: 1rem;
       margin-top: 1rem;
       overflow: hidden; }
-    .epic-modal.epic-modal-theme-minimalistic-dark-aqua > .window > .close-button {
+    .epic-modal.epic-modal-theme-minimalist-dark-aqua > .window > .close-button {
       font-family: "Quicksand", sans-serif;
       background-color: transparent;
       color: #018763;
@@ -2364,9 +2364,9 @@
       border: none;
       outline: none;
       transition: transform 0.3s; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-aqua > .window > .close-button:hover {
+      .epic-modal.epic-modal-theme-minimalist-dark-aqua > .window > .close-button:hover {
         transform: rotateZ(360deg); }
-    .epic-modal.epic-modal-theme-minimalistic-dark-aqua > .window > .content {
+    .epic-modal.epic-modal-theme-minimalist-dark-aqua > .window > .content {
       font-family: "Quicksand", sans-serif;
       font-weight: lighter;
       color: #fff;
@@ -2380,15 +2380,15 @@
       padding: 0.25rem;
       overflow: auto;
       border-top-width: 2px; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-aqua > .window > .content::-webkit-scrollbar {
+      .epic-modal.epic-modal-theme-minimalist-dark-aqua > .window > .content::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-aqua > .window > .content::-webkit-scrollbar-track {
+      .epic-modal.epic-modal-theme-minimalist-dark-aqua > .window > .content::-webkit-scrollbar-track {
         background: #222; }
-      .epic-modal.epic-modal-theme-minimalistic-dark-aqua > .window > .content::-webkit-scrollbar-thumb {
+      .epic-modal.epic-modal-theme-minimalist-dark-aqua > .window > .content::-webkit-scrollbar-thumb {
         background: #fff;
         border-radius: 999px; }
-        .epic-modal.epic-modal-theme-minimalistic-dark-aqua > .window > .content::-webkit-scrollbar-thumb:hover {
+        .epic-modal.epic-modal-theme-minimalist-dark-aqua > .window > .content::-webkit-scrollbar-thumb:hover {
           background: #018763;
           cursor: pointer; }
 

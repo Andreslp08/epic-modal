@@ -164,7 +164,7 @@
     }
 }
 
-@mixin minimalistic-epic-modal($backdropColor, $backgroundColor, $onBackgroundColor, $primaryColor, $onPrimaryColor) {
+@mixin minimalist-epic-modal($backdropColor, $backgroundColor, $onBackgroundColor, $primaryColor, $onPrimaryColor) {
     @include basic-epic-modal($backdropColor);
     > .window {
         @include basic-epic-modal-window($backgroundColor, 90vw, 80vh);
@@ -175,7 +175,7 @@
         border: solid 2.5px $primaryColor;
         > .title {
             color: $onBackgroundColor;
-            font-family: $minimalistic-title;
+            font-family: $minimalist-title;
             font-weight: normal;
             font-size: 1.5rem;
             margin-left: 1rem;
@@ -183,7 +183,7 @@
             overflow: hidden;
         }
         > .close-button {
-            font-family: $minimalistic-title;
+            font-family: $minimalist-title;
             background-color: transparent;
             color: $primaryColor;
             $button-size: 40px;
@@ -200,7 +200,7 @@
             }
         }
         > .content {
-            font-family: $minimalistic-title;
+            font-family: $minimalist-title;
             font-weight: lighter;
             color: $onBackgroundColor;
             @include epic-modal-scroll-style($backgroundColor, $onBackgroundColor, $primaryColor, $onPrimaryColor);
