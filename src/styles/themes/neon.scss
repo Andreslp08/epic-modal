@@ -1,0 +1,66 @@
+.epic-modal {
+    &.epic-modal-theme-neon {
+        &-light{
+            @include neon-epic-modal(
+                $neon-light-backdrop-color,
+                $neon-light-background-color,
+                $neon-light-onbackground-color,
+                $neon-light-primary-color,
+                $neon-light-onprimary-color,
+                $neon-light-background-shadow-color,
+               )
+        }
+        &-dark{
+            @include neon-epic-modal(
+                $neon-dark-backdrop-color,
+                $neon-dark-background-color,
+                $neon-dark-onbackground-color,
+                $neon-dark-primary-color,
+                $neon-dark-onprimary-color,
+                $neon-dark-background-shadow-color,
+               )
+        }
+        &-gold{
+            @include neon-epic-modal(
+                $neon-gold-backdrop-color,
+                $neon-gold-background-color,
+                $neon-gold-onbackground-color,
+                $neon-gold-primary-color,
+                $neon-gold-onprimary-color,
+                $neon-gold-background-shadow-color,
+               )
+        }
+        &-salmon{
+            @include neon-epic-modal(
+                $neon-salmon-backdrop-color,
+                $neon-salmon-background-color,
+                $neon-salmon-onbackground-color,
+                $neon-salmon-primary-color,
+                $neon-salmon-onprimary-color,
+                $neon-salmon-background-shadow-color,
+               )
+        }
+        &-blue{
+            @include neon-epic-modal(
+                $neon-blue-backdrop-color,
+                $neon-blue-background-color,
+                $neon-blue-onbackground-color,
+                $neon-blue-primary-color,
+                $neon-blue-onprimary-color,
+                $neon-blue-background-shadow-color,
+               )
+        }
+        &-aqua{
+            @include neon-epic-modal(
+                $neon-aqua-backdrop-color,
+                $neon-aqua-background-color,
+                $neon-aqua-onbackground-color,
+                $neon-aqua-primary-color,
+                $neon-aqua-onprimary-color,
+                $neon-aqua-background-shadow-color,
+               )
+        }
+    }
+
+
+}

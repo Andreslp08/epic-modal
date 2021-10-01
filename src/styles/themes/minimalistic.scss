@@ -1,0 +1,106 @@
+.epic-modal {
+    &.epic-modal-theme-minimalistic {
+        &-light{
+            @include minimalistic-epic-modal(
+                $minimalistic-light-backdrop-color,
+                $minimalistic-light-background-color,
+                $minimalistic-light-onbackground-color,
+                $minimalistic-light-primary-color,
+                $minimalistic-light-onprimary-color
+               )
+        }
+        &-light-gold{
+            @include minimalistic-epic-modal(
+                $minimalistic-light-backdrop-color,
+                $minimalistic-light-background-color,
+                $minimalistic-light-onbackground-color,
+                $minimalistic-light-gold-primary-color,
+                $minimalistic-light-gold-onprimary-color 
+               )
+        }
+
+        &-light-salmon{
+            @include minimalistic-epic-modal(
+                $minimalistic-light-backdrop-color,
+                $minimalistic-light-background-color,
+                $minimalistic-light-onbackground-color,
+                $minimalistic-light-salmon-primary-color,
+                $minimalistic-light-salmon-onprimary-color 
+               )
+        }
+
+        &-light-blue{
+            @include minimalistic-epic-modal(
+                $minimalistic-light-backdrop-color,
+                $minimalistic-light-background-color,
+                $minimalistic-light-onbackground-color,
+                $minimalistic-light-blue-primary-color,
+                $minimalistic-light-blue-onprimary-color 
+               )
+        }
+
+        &-light-aqua{
+            @include minimalistic-epic-modal(
+                $minimalistic-light-backdrop-color,
+                $minimalistic-light-background-color,
+                $minimalistic-light-onbackground-color,
+                $minimalistic-light-aqua-primary-color,
+                $minimalistic-light-aqua-onprimary-color 
+               )
+        }
+
+        &-dark{
+            @include minimalistic-epic-modal(
+                $minimalistic-dark-backdrop-color,
+                $minimalistic-dark-background-color,
+                $minimalistic-dark-onbackground-color,
+                $minimalistic-dark-primary-color,
+                $minimalistic-dark-onprimary-color 
+               )
+        }
+
+        &-dark-gold{
+            @include minimalistic-epic-modal(
+                $minimalistic-dark-backdrop-color,
+                $minimalistic-dark-background-color,
+                $minimalistic-dark-onbackground-color,
+                $minimalistic-dark-gold-primary-color,
+                $minimalistic-dark-gold-onprimary-color 
+               )
+        }
+
+        &-dark-salmon{
+            @include minimalistic-epic-modal(
+                $minimalistic-dark-backdrop-color,
+                $minimalistic-dark-background-color,
+                $minimalistic-dark-onbackground-color,
+                $minimalistic-dark-salmon-primary-color,
+                $minimalistic-dark-salmon-onprimary-color 
+               )
+        }
+
+        &-dark-blue{
+            @include minimalistic-epic-modal(
+                $minimalistic-dark-backdrop-color,
+                $minimalistic-dark-background-color,
+                $minimalistic-dark-onbackground-color,
+                $minimalistic-dark-blue-primary-color,
+                $minimalistic-dark-blue-onprimary-color 
+               )
+        }
+
+        &-dark-aqua{
+            @include minimalistic-epic-modal(
+                $minimalistic-dark-backdrop-color,
+                $minimalistic-dark-background-color,
+                $minimalistic-dark-onbackground-color,
+                $minimalistic-dark-aqua-primary-color,
+                $minimalistic-dark-aqua-onprimary-color 
+               )
+        }
+
+
+    }
+
+
+}
