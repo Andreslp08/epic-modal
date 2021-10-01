@@ -8,8 +8,8 @@
     z-index: $epic-modal-zindex;
     justify-content: center;
     align-items: center;
-    &::before{
-        content: '';
+    &::before {
+        content: "";
         position: absolute;
         background-color: $background-color;
         top: 0;
@@ -64,13 +64,13 @@
         align-items: flex-end;
     }
 
-    &.epic-modal-backdrop-click{
+    &.epic-modal-backdrop-click {
         cursor: pointer;
-        *{
+        * {
             cursor: auto;
         }
     }
-    *[data-epic-modal-close-button="true"]{
+    *[data-epic-modal-close-button="true"] {
         cursor: pointer;
     }
 }
@@ -87,36 +87,234 @@
     &::-webkit-scrollbar {
         width: 0.4rem;
         height: 0.4rem;
-      }
-      
-      &::-webkit-scrollbar-track {
+    }
+
+    &::-webkit-scrollbar-track {
         background: $background-color;
-      }
-    
-    
-      &::-webkit-scrollbar-thumb {
+    }
+
+    &::-webkit-scrollbar-thumb {
         background: $onbackground-color;
         border-radius: 999px;
-        &:hover{
+        &:hover {
             background: $primary-color;
             cursor: pointer;
         }
-      }    
+    }
+}
+
+@mixin default-epic-modal($backdropColor, $backgroundColor, $onBackgroundColor, $primaryColor, $onPrimaryColor) {
+    @include basic-epic-modal($backdropColor);
+    > .window {
+        @include basic-epic-modal-window($backgroundColor, 90vw, 80vh);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: min-content 1fr;
+        border-radius: 30px;
+        > .title {
+            color: $onBackgroundColor;
+            font-family: $default-title;
+            font-weight: bolder;
+            font-size: 1.2rem;
+            margin-left: 1rem;
+            margin-top: 1rem;
+            overflow: hidden;
+        }
+        > .close-button {
+            position: relative;
+            top: -25%;
+            right: -25%;
+            background: $primaryColor;
+            border:solid 2px $onBackgroundColor;
+            color: $onPrimaryColor;
+            $button-size: 40px;
+            border-radius: 99999px;
+            width: $button-size;
+            height: $button-size;
+            font-family: $neon-title;
+            font-weight: lighter;
+            font-size: $button-size/1.2;
+            line-height: $button-size/1.2;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            transition: transform 0.3s, color 0.3s, background-color 0.3s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        > .content {
+            border-top: solid $primaryColor;
+            color: $onBackgroundColor;
+            @include epic-modal-scroll-style($backgroundColor, $onBackgroundColor, $primaryColor, $onPrimaryColor);
+            grid-column: span 2;
+            margin-top: 0.25rem;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            padding: 0.25rem;
+            overflow: auto;
+            border-top-width: 2px;
+        }
+    }
+}
+
+@mixin minimalistic-epic-modal($backdropColor, $backgroundColor, $onBackgroundColor, $primaryColor, $onPrimaryColor) {
+    @include basic-epic-modal($backdropColor);
+    > .window {
+        @include basic-epic-modal-window($backgroundColor, 90vw, 80vh);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: min-content 1fr;
+        border-radius: 0;
+        border: solid 2.5px $primaryColor;
+        > .title {
+            color: $onBackgroundColor;
+            font-family: $minimalistic-title;
+            font-weight: normal;
+            font-size: 1.5rem;
+            margin-left: 1rem;
+            margin-top: 1rem;
+            overflow: hidden;
+        }
+        > .close-button {
+            font-family: $minimalistic-title;
+            background-color: transparent;
+            color: $primaryColor;
+            $button-size: 40px;
+            position: relative;
+            width: $button-size;
+            height: $button-size;
+            font-size: $button-size/1.5;
+            border-radius: 999px;
+            border: none;
+            outline: none;
+            transition: transform 0.3s;
+            &:hover {
+                transform: rotateZ(360deg);
+            }
+        }
+        > .content {
+            font-family: $minimalistic-title;
+            font-weight: lighter;
+            color: $onBackgroundColor;
+            @include epic-modal-scroll-style($backgroundColor, $onBackgroundColor, $primaryColor, $onPrimaryColor);
+            grid-column: span 2;
+            margin-top: 0.25rem;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            padding: 0.25rem;
+            overflow: auto;
+            border-top-width: 2px;
+        }
+    }
+}
+
+@mixin neon-epic-modal(
+    $backdropColor,
+    $backgroundColor,
+    $onBackgroundColor,
+    $primaryColor,
+    $onPrimaryColor,
+    $shadowColor
+) {
+    @include basic-epic-modal(#000);
+    > .window {
+        @include basic-epic-modal-window($backgroundColor, 90vw, 80vh);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: min-content 1fr;
+        border-radius: 30px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background: $shadowColor;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:100%;
+            border-radius: inherit;
+            filter: blur(25px);
+            z-index: -1;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $backgroundColor;
+            border-radius: inherit;
+            z-index: -1;
+        }
+        > .title {
+            color: $onBackgroundColor;
+            font-family: $neon-title;
+            font-weight: bolder;
+            text-align: center;
+            font-size: 1.5rem;
+            justify-self: center;
+            align-self: center;
+            overflow: hidden;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        > .close-button {
+            background: none;
+            border:solid 2px $onBackgroundColor;
+            color: $onBackgroundColor;
+            $button-size: 30px;
+            border-radius: 99999px;
+            width: $button-size;
+            height: $button-size;
+            font-family: $neon-title;
+            font-weight: lighter;
+            font-size: $button-size/1.5;
+            line-height: $button-size/1.5;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            margin-top: 0.8rem;
+            margin-left: 0.8rem;
+            margin-right: 0.8rem;
+            transition: transform 0.3s, color 0.3s, background-color 0.3s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        > .content {
+            font-family: $neon-title;
+            font-weight: lighter;
+            color: $onBackgroundColor;
+            @include epic-modal-scroll-style($backgroundColor, $onBackgroundColor, $primaryColor, $onPrimaryColor);
+            grid-column: span 2;
+            margin-top: 0.25rem;
+            margin-bottom: 1rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            padding: 0.25rem;
+            overflow: auto;
+        }
+    }
 }
 
 // ANIMATION
 @mixin anim($list) {
     $combined: "";
     @for $i from 1 through length($list) {
-      $anim: nth($list, $i);
-  
-      @if $i == length($list) {
-        $combined: $combined + $anim;
-      } @else {
-        $combined: $combined + $anim + ",";
-      }
+        $anim: nth($list, $i);
+
+        @if $i == length($list) {
+            $combined: $combined + $anim;
+        } @else {
+            $combined: $combined + $anim + ",";
+        }
     }
-  
+
     animation: unquote($combined);
-  }
-  
+}
