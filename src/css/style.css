@@ -1,4 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@keyframes scaleInBounce {
+  0% {
+    transform: scale(0); }
+  50% {
+    transform: scale(1.3); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes slideYIn {
+  0% {
+    transform: translateY(-1500px) skewY(30deg) scaleY(1.3); }
+  70% {
+    transform: translateY(30px) skewY(0deg) scaleY(0.9); }
+  100% {
+    transform: translateY(0px) skewY(0deg) scaleY(1); } }
+
+@keyframes slideYOut {
+  0% {
+    transform: translateY(0px) skewY(0deg) scaleY(1); }
+  30% {
+    transform: translateY(-30px) skewY(-5deg) scaleY(0.9); }
+  100% {
+    transform: translateY(1500px) skewY(30deg) scaleY(1.3); } }
+
+@keyframes slideXIn {
+  0% {
+    transform: translateX(-1500px) skewX(30deg) scaleX(1.3); }
+  70% {
+    transform: translateX(30px) skewX(0deg) scaleX(0.9); }
+  100% {
+    transform: translateX(0px) skewX(0deg) scaleX(1); } }
+
+@keyframes slideXOut {
+  0% {
+    transform: translateX(0px) skewX(0deg) scaleX(1); }
+  30% {
+    transform: translateX(-30px) skewX(-5deg) scaleX(0.9); }
+  100% {
+    transform: translateX(1500px) skewX(30deg) scaleX(1.3); } }
+
+@keyframes verticalBounce {
+  0% {
+    transform: translateY(-100%); }
+  25% {
+    transform: translateY(25%); }
+  50% {
+    transform: translateY(-50%); }
+  75% {
+    transform: translateY(0%); }
+  100% {
+    transform: translateY(0%); } }
+
+@keyframes horizontalBounce {
+  0% {
+    transform: translateX(-100%); }
+  25% {
+    transform: translateX(25%); }
+  50% {
+    transform: translateX(-50%); }
+  75% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(0%); } }
+
+@keyframes scaleOutBounce {
+  0% {
+    transform: scale(1.1); }
+  50% {
+    transform: scale(0.7); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes spiral {
+  0% {
+    transform: scale(0) rotateZ(360deg); } }
+
+@keyframes zoomInStart {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes zoomInEnd {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(5); } }
+
+@keyframes zoomOutStart {
+  0% {
+    transform: scale(5); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes zoomOutEnd {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+
+@keyframes opacityAnim {
+  0% {
+    opacity: 0; } }
+
+@keyframes visibilityAnim {
+  0% {
+    visibility: hidden; } }
+
+@keyframes shootingStarIn {
+  0% {
+    transform: translate(-200%, -200%); } }
+
+@keyframes shootingStarOut {
+  0% {
+    transform: translate(0%, 0%); }
+  100% {
+    transform: translate(200%, 200%); } }
+
 .epic-modal {
   position: fixed;
   top: 0;
@@ -52,30 +170,6 @@
   .epic-modal *[data-epic-modal-close-button="true"] {
     cursor: pointer; }
 
-@keyframes scaleInBounce {
-  0% {
-    transform: scale(0); }
-  50% {
-    transform: scale(1.3); }
-  100% {
-    transform: scale(1); } }
-
-@keyframes scaleOutBounce {
-  0% {
-    transform: scale(1.1); }
-  50% {
-    transform: scale(0.7); }
-  100% {
-    transform: scale(1); } }
-
-@keyframes opacityAnim {
-  0% {
-    opacity: 0; } }
-
-@keyframes visibilityAnim {
-  0% {
-    visibility: hidden; } }
-
 .epic-modal-anim-default-show {
   display: flex !important;
   animation: visibilityAnim .3s linear .2s 1 normal both; }
@@ -91,6 +185,157 @@
     animation: opacityAnim 0.3s linear 0.2s 1 reverse both; }
   .epic-modal-anim-default-hide > :nth-child(1) {
     animation: scaleInBounce .3s linear .2s 1 reverse both; }
+
+.epic-modal-anim-simple-show {
+  display: flex !important;
+  animation: visibilityAnim .3s linear .2s 1 normal both; }
+  .epic-modal-anim-simple-show::before {
+    animation: opacityAnim 0.3s linear 0.2s 1 normal both; }
+  .epic-modal-anim-simple-show > :nth-child(1) {
+    animation: opacityAnim .3s linear .2s 1 normal both; }
+
+.epic-modal-anim-simple-hide {
+  display: flex !important;
+  animation: visibilityAnim .3s linear .2s 1 reverse both; }
+  .epic-modal-anim-simple-hide::before {
+    animation: opacityAnim 0.3s linear 0.2s 1 reverse both; }
+  .epic-modal-anim-simple-hide > :nth-child(1) {
+    animation: opacityAnim .3s linear .2s 1 reverse both; }
+
+.epic-modal-anim-vertical-bounce-show {
+  display: flex !important;
+  animation: visibilityAnim 1s linear .2s 1 normal both; }
+  .epic-modal-anim-vertical-bounce-show::before {
+    animation: opacityAnim 0.3s linear 0.2s 1 normal both; }
+  .epic-modal-anim-vertical-bounce-show > :nth-child(1) {
+    animation: verticalBounce 1s ease-out .2s 1 normal both; }
+
+.epic-modal-anim-vertical-bounce-hide {
+  display: flex !important;
+  animation: visibilityAnim 1s linear .2s 1 reverse both; }
+  .epic-modal-anim-vertical-bounce-hide::before {
+    animation: opacityAnim 1s linear 0.2s 1 reverse both; }
+  .epic-modal-anim-vertical-bounce-hide > :nth-child(1) {
+    animation: verticalBounce 1s linear .2s 1 reverse both; }
+
+.epic-modal-anim-horizontal-bounce-show {
+  display: flex !important;
+  animation: visibilityAnim 1s linear .2s 1 normal both; }
+  .epic-modal-anim-horizontal-bounce-show::before {
+    animation: opacityAnim 0.3s linear 0.2s 1 normal both; }
+  .epic-modal-anim-horizontal-bounce-show > :nth-child(1) {
+    animation: horizontalBounce 1s ease-out .2s 1 normal both; }
+
+.epic-modal-anim-horizontal-bounce-hide {
+  display: flex !important;
+  animation: visibilityAnim 1s linear .2s 1 reverse both; }
+  .epic-modal-anim-horizontal-bounce-hide::before {
+    animation: opacityAnim 1s linear 0.2s 1 reverse both; }
+  .epic-modal-anim-horizontal-bounce-hide > :nth-child(1) {
+    animation: horizontalBounce 1s linear .2s 1 reverse both; }
+
+.epic-modal-anim-vertical-slide-show {
+  display: flex !important;
+  animation: visibilityAnim .3s linear .2s 1 normal both; }
+  .epic-modal-anim-vertical-slide-show::before {
+    animation: scaleInBounce 0.5s linear 0.2s 1 normal both; }
+  .epic-modal-anim-vertical-slide-show > :nth-child(1) {
+    animation: slideYIn .3s ease-out .4s 1 normal both; }
+
+.epic-modal-anim-vertical-slide-hide {
+  display: flex !important;
+  animation: visibilityAnim 1s linear .2s 1 reverse both; }
+  .epic-modal-anim-vertical-slide-hide::before {
+    animation: scaleInBounce 0.5s linear 0.4s 1 reverse both; }
+  .epic-modal-anim-vertical-slide-hide > :nth-child(1) {
+    animation: slideYOut .3s linear .2s 1 both; }
+
+.epic-modal-anim-horizontal-slide-show {
+  display: flex !important;
+  animation: visibilityAnim .3s linear .2s 1 normal both; }
+  .epic-modal-anim-horizontal-slide-show::before {
+    animation: scaleInBounce 0.5s linear 0.2s 1 normal both; }
+  .epic-modal-anim-horizontal-slide-show > :nth-child(1) {
+    animation: slideXIn .3s ease-out .4s 1 normal both; }
+
+.epic-modal-anim-horizontal-slide-hide {
+  display: flex !important;
+  animation: visibilityAnim 1s linear .2s 1 reverse both; }
+  .epic-modal-anim-horizontal-slide-hide::before {
+    animation: scaleInBounce 0.5s linear 0.4s 1 reverse both; }
+  .epic-modal-anim-horizontal-slide-hide > :nth-child(1) {
+    animation: slideXOut .3s linear .2s 1 both; }
+
+.epic-modal-anim-spiral-show {
+  display: flex !important;
+  animation: visibilityAnim .3s linear .2s 1 normal both; }
+  .epic-modal-anim-spiral-show::before {
+    animation: scaleInBounce 0.5s linear 0.2s 1 normal both; }
+  .epic-modal-anim-spiral-show > :nth-child(1) {
+    animation: spiral .3s ease-out .4s 1 normal both; }
+
+.epic-modal-anim-spiral-hide {
+  display: flex !important;
+  animation: visibilityAnim 1s linear .2s 1 reverse both; }
+  .epic-modal-anim-spiral-hide::before {
+    animation: scaleInBounce 0.5s linear 0.4s 1 reverse both; }
+  .epic-modal-anim-spiral-hide > :nth-child(1) {
+    animation: spiral .3s linear .2s 1 reverse both; }
+
+.epic-modal-anim-zoom-in-show {
+  display: flex !important;
+  animation: visibilityAnim .3s linear .2s 1 normal both; }
+  .epic-modal-anim-zoom-in-show::before {
+    animation: opacityAnim 0.3s linear 0.2s 1 normal both; }
+  .epic-modal-anim-zoom-in-show > :nth-child(1) {
+    animation: opacityAnim 0.3s linear 0.3s 1 both,zoomInStart 0.3s linear 0.3s 1 both; }
+
+.epic-modal-anim-zoom-in-hide {
+  display: flex !important;
+  animation: visibilityAnim .6s linear .2s 1 reverse both; }
+  .epic-modal-anim-zoom-in-hide::before {
+    animation: opacityAnim 0.3s linear 0.4s 1 reverse both; }
+  .epic-modal-anim-zoom-in-hide > :nth-child(1) {
+    animation: opacityAnim 0.3s linear 0.3s 1 reverse both,zoomInEnd 0.3s linear 0.3s 1 both; }
+
+.epic-modal-anim-zoom-out-show {
+  display: flex !important;
+  animation: visibilityAnim .3s linear .2s 1 normal both; }
+  .epic-modal-anim-zoom-out-show::before {
+    animation: opacityAnim 0.3s linear 0.2s 1 normal both; }
+  .epic-modal-anim-zoom-out-show > :nth-child(1) {
+    animation: opacityAnim 0.2s linear 0.3s 1 both,zoomOutStart 0.2s linear 0.3s 1 both; }
+
+.epic-modal-anim-zoom-out-hide {
+  display: flex !important;
+  animation: visibilityAnim .6s linear .2s 1 reverse both; }
+  .epic-modal-anim-zoom-out-hide::before {
+    animation: opacityAnim 0.3s linear 0.4s 1 reverse both; }
+  .epic-modal-anim-zoom-out-hide > :nth-child(1) {
+    animation: opacityAnim 0.3s linear 0.3s 1 reverse both,zoomOutEnd 0.3s linear 0.3s 1 both; }
+
+.epic-modal-anim-shooting-star-show {
+  display: flex !important;
+  animation: visibilityAnim .3s linear .2s 1 normal both; }
+  .epic-modal-anim-shooting-star-show::before {
+    animation: opacityAnim 0.3s linear 0.2s 1 normal both; }
+  .epic-modal-anim-shooting-star-show > :nth-child(1) {
+    animation: opacityAnim 0.5s linear 0.3s 1 both,shootingStarIn 0.5s linear 0.3s 1 both; }
+
+.epic-modal-anim-shooting-star-hide {
+  display: flex !important;
+  animation: visibilityAnim .6s linear .2s 1 reverse both; }
+  .epic-modal-anim-shooting-star-hide::before {
+    animation: opacityAnim 0.3s linear 0.4s 1 reverse both; }
+  .epic-modal-anim-shooting-star-hide > :nth-child(1) {
+    animation: opacityAnim 0.5s linear 0.3s 1 reverse both,shootingStarOut 0.5s linear 0.3s 1 both; }
+
+.epic-modal-anim-none-show, .epic-modal-anim-none-hide {
+  display: flex !important; }
+
+.epic-modal-anim-none-hide {
+  opacity: 0;
+  visibility: hidden; }
 
 .epic-modal.epic-modal-theme-default-light {
   position: fixed;
@@ -188,6 +433,8 @@
     .epic-modal.epic-modal-theme-default-light > .window > .content {
       border-top: solid black;
       color: #000;
+      font-family: "Quicksand", sans-serif;
+      font-weight: lighter;
       scrollbar-color: #000 transparent;
       scrollbar-width: thin;
       grid-column: span 2;
@@ -306,6 +553,8 @@
     .epic-modal.epic-modal-theme-default-light-gold > .window > .content {
       border-top: solid #ffbb00;
       color: #000;
+      font-family: "Quicksand", sans-serif;
+      font-weight: lighter;
       scrollbar-color: #000 transparent;
       scrollbar-width: thin;
       grid-column: span 2;
@@ -424,6 +673,8 @@
     .epic-modal.epic-modal-theme-default-light-salmon > .window > .content {
       border-top: solid #ff5e00;
       color: #000;
+      font-family: "Quicksand", sans-serif;
+      font-weight: lighter;
       scrollbar-color: #000 transparent;
       scrollbar-width: thin;
       grid-column: span 2;
@@ -542,6 +793,8 @@
     .epic-modal.epic-modal-theme-default-light-blue > .window > .content {
       border-top: solid #0073ff;
       color: #000;
+      font-family: "Quicksand", sans-serif;
+      font-weight: lighter;
       scrollbar-color: #000 transparent;
       scrollbar-width: thin;
       grid-column: span 2;
@@ -660,6 +913,8 @@
     .epic-modal.epic-modal-theme-default-light-aqua > .window > .content {
       border-top: solid #018763;
       color: #000;
+      font-family: "Quicksand", sans-serif;
+      font-weight: lighter;
       scrollbar-color: #000 transparent;
       scrollbar-width: thin;
       grid-column: span 2;
@@ -778,6 +1033,8 @@
     .epic-modal.epic-modal-theme-default-dark > .window > .content {
       border-top: solid white;
       color: #fff;
+      font-family: "Quicksand", sans-serif;
+      font-weight: lighter;
       scrollbar-color: #fff transparent;
       scrollbar-width: thin;
       grid-column: span 2;
@@ -896,6 +1153,8 @@
     .epic-modal.epic-modal-theme-default-dark-gold > .window > .content {
       border-top: solid #ffbb00;
       color: #fff;
+      font-family: "Quicksand", sans-serif;
+      font-weight: lighter;
       scrollbar-color: #fff transparent;
       scrollbar-width: thin;
       grid-column: span 2;
@@ -1014,6 +1273,8 @@
     .epic-modal.epic-modal-theme-default-dark-salmon > .window > .content {
       border-top: solid #ff5e00;
       color: #fff;
+      font-family: "Quicksand", sans-serif;
+      font-weight: lighter;
       scrollbar-color: #fff transparent;
       scrollbar-width: thin;
       grid-column: span 2;
@@ -1132,6 +1393,8 @@
     .epic-modal.epic-modal-theme-default-dark-blue > .window > .content {
       border-top: solid #0073ff;
       color: #fff;
+      font-family: "Quicksand", sans-serif;
+      font-weight: lighter;
       scrollbar-color: #fff transparent;
       scrollbar-width: thin;
       grid-column: span 2;
@@ -1250,6 +1513,8 @@
     .epic-modal.epic-modal-theme-default-dark-aqua > .window > .content {
       border-top: solid #018763;
       color: #fff;
+      font-family: "Quicksand", sans-serif;
+      font-weight: lighter;
       scrollbar-color: #fff transparent;
       scrollbar-width: thin;
       grid-column: span 2;
