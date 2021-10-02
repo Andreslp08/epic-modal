@@ -1,40 +1,4 @@
 
-@keyframes scaleInBounce {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes scaleOutBounce {
-  0% {
-    transform: scale(1.1);
-  }
-  50% {
-    transform: scale(0.7);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes opacityAnim {
-  0% {
-    opacity: 0;
-  }
-}
-
-@keyframes visibilityAnim {
-  0% {
-    visibility: hidden;
-  }
-}
-
 .epic-modal-anim-default-show{
   display: $epic-modal-display!important;
   animation: visibilityAnim .3s linear .2s 1 normal both;
@@ -62,3 +26,288 @@
     animation: scaleInBounce .3s linear .2s 1 reverse both;
   }
 }
+
+.epic-modal-anim-simple-show{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .3s linear .2s 1 normal both;
+  &::before{
+    $animations:(
+      opacityAnim .3s linear .2s 1 normal both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: opacityAnim .3s linear .2s 1 normal both;
+  }
+}
+
+.epic-modal-anim-simple-hide{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .3s linear .2s 1 reverse both;
+  &::before{
+    $animations:(
+      opacityAnim .3s linear .2s 1 reverse both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: opacityAnim .3s linear .2s 1 reverse both;
+  }
+}
+
+
+.epic-modal-anim-vertical-bounce-show{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim 1s linear .2s 1 normal both;
+  &::before{
+    $animations:(
+      opacityAnim .3s linear .2s 1 normal both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: verticalBounce 1s ease-out .2s 1 normal both;
+  }
+}
+.epic-modal-anim-vertical-bounce-hide{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim 1s linear .2s 1 reverse both;
+  &::before{
+    $animations:(
+      opacityAnim 1s linear .2s 1 reverse both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: verticalBounce 1s linear .2s 1 reverse both;
+  }
+}
+
+.epic-modal-anim-horizontal-bounce-show{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim 1s linear .2s 1 normal both;
+  &::before{
+    $animations:(
+      opacityAnim .3s linear .2s 1 normal both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: horizontalBounce 1s ease-out .2s 1 normal both;
+  }
+}
+.epic-modal-anim-horizontal-bounce-hide{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim 1s linear .2s 1 reverse both;
+  &::before{
+    $animations:(
+      opacityAnim 1s linear .2s 1 reverse both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: horizontalBounce 1s linear .2s 1 reverse both;
+  }
+}
+
+.epic-modal-anim-vertical-slide-show{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .3s linear .2s 1 normal both;
+  &::before{
+    $animations:(
+      scaleInBounce .5s linear .2s 1 normal both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: slideYIn .3s ease-out .4s 1 normal both;
+  }
+}
+
+.epic-modal-anim-vertical-slide-hide{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim 1s linear .2s 1 reverse both;
+  &::before{
+    $animations:(
+      scaleInBounce .5s linear .4s 1 reverse both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: slideYOut .3s linear .2s 1 both;
+  }
+}
+
+.epic-modal-anim-horizontal-slide-show{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .3s linear .2s 1 normal both;
+  &::before{
+    $animations:(
+      scaleInBounce .5s linear .2s 1 normal both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: slideXIn .3s ease-out .4s 1 normal both;
+  }
+}
+
+.epic-modal-anim-horizontal-slide-hide{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim 1s linear .2s 1 reverse both;
+  &::before{
+    $animations:(
+      scaleInBounce .5s linear .4s 1 reverse both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: slideXOut .3s linear .2s 1 both;
+  }
+}
+
+.epic-modal-anim-spiral-show{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .3s linear .2s 1 normal both;
+  &::before{
+    $animations:(
+      scaleInBounce .5s linear .2s 1 normal both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: spiral .3s ease-out .4s 1 normal both;
+  }
+}
+
+.epic-modal-anim-spiral-hide{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim 1s linear .2s 1 reverse both;
+  &::before{
+    $animations:(
+      scaleInBounce .5s linear .4s 1 reverse both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    animation: spiral .3s linear .2s 1 reverse both;
+  }
+}
+.epic-modal-anim-zoom-in-show{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .3s linear .2s 1 normal both;
+  &::before{
+    $animations:(
+      opacityAnim .3s linear .2s 1 normal both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    $animations:(
+      opacityAnim .3s linear .3s 1  both,
+      zoomInStart .3s linear .3s 1  both
+    );
+    @include anim($animations)
+  }
+}
+
+.epic-modal-anim-zoom-in-hide{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .6s linear .2s 1 reverse both;
+  &::before{
+    $animations:(
+      opacityAnim .3s linear .4s 1 reverse both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    $animations:(
+      opacityAnim .3s linear .3s 1 reverse both,
+      zoomInEnd .3s linear .3s 1 both
+    );
+   @include anim($animations) 
+  }
+}
+
+
+.epic-modal-anim-zoom-out-show{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .3s linear .2s 1 normal both;
+  &::before{
+    $animations:(
+      opacityAnim .3s linear .2s 1 normal both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    $animations:(
+      opacityAnim .2s linear .3s 1  both,
+      zoomOutStart .2s linear .3s 1  both
+    );
+    @include anim($animations)
+  }
+}
+
+.epic-modal-anim-zoom-out-hide{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .6s linear .2s 1 reverse both;
+  &::before{
+    $animations:(
+      opacityAnim .3s linear .4s 1 reverse both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    $animations:(
+      opacityAnim .3s linear .3s 1 reverse both,
+      zoomOutEnd .3s linear .3s 1 both
+    );
+   @include anim($animations) 
+  }
+}
+
+.epic-modal-anim-shooting-star-show{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .3s linear .2s 1 normal both;
+  &::before{
+    $animations:(
+      opacityAnim .3s linear .2s 1 normal both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    $animations:(
+      opacityAnim .5s linear .3s 1  both,
+      shootingStarIn .5s linear .3s 1  both
+    );
+    @include anim($animations)
+  }
+}
+
+.epic-modal-anim-shooting-star-hide{
+  display: $epic-modal-display!important;
+  animation: visibilityAnim .6s linear .2s 1 reverse both;
+  &::before{
+    $animations:(
+      opacityAnim .3s linear .4s 1 reverse both,
+    );
+   @include anim($animations) 
+  }
+  > :nth-child(1){
+    $animations:(
+      opacityAnim .5s linear .3s 1 reverse both,
+      shootingStarOut .5s linear .3s 1 both
+    );
+   @include anim($animations) 
+  }
+}
+
+
+.epic-modal-anim-none-show,.epic-modal-anim-none-hide {
+  display: $epic-modal-display!important;
+}
+.epic-modal-anim-none-hide{
+  opacity: 0;
+  visibility: hidden;
+}
+
