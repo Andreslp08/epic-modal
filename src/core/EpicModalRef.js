@@ -38,7 +38,8 @@ class EpicModalRef extends BaseEpicModal {
             } else {
                 this.properties = { ...DEFAULT_INITIAL_PROPERTIES, ...this.properties, ...parsedProperties };
             }
-            this.properties.customTemplate = this.domElementReference.innerHTML;
+            this.properties.content = this.domElementReference.querySelector(".window")?.querySelector(".content").innerHTML;
+            this.properties.title = this.domElementReference.querySelector(".window")?.querySelector(".title").innerHTML;
     
             if(isValidHTMLstructure(this.domElementReference) == false ){
                 EpicModalManager.removeModal(this.id);
