@@ -151,6 +151,8 @@
         > .content {
             border-top: solid $primaryColor;
             color: $onBackgroundColor;
+            font-family: $default-title;
+            font-weight: lighter;
             @include epic-modal-scroll-style($backgroundColor, $onBackgroundColor, $primaryColor, $onPrimaryColor);
             grid-column: span 2;
             margin-top: 0.25rem;
