@@ -12,6 +12,16 @@ const HTML_DATA_KEYS = {
 
 const ANIMATIONS = {
     "default":"default",
+    "simple":"simple",
+    "vertical-bounce":"vertical-bounce",
+    "horizontal-bounce":"horizontal-bounce",
+    "vertical-slide":"vertical-slide",
+    "horizontal-slide":"horizontal-slide",
+    "spiral":"spiral",
+    "zoom-in":"zoom-in",
+    "zoom-out":"zoom-out",
+    "shooting-star":"shooting-star",
+    "none":"none"
 }
 
 const THEMES = {
